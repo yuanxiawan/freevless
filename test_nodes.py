@@ -5,9 +5,10 @@ import os
 import time
 import re
 import psutil
+import base64
+import json
 
 def parse_vless_url(vless_url):
-    """解析 VLESS URL 获取主机（IP 或域名）"""
     try:
         parsed = urllib.parse.urlparse(vless_url)
         if not parsed.scheme == "vless":
@@ -24,7 +25,6 @@ def parse_vless_url(vless_url):
         return None
 
 def parse_vmess_url(vmess_url):
-    """解析 VMess URL 获取主机（IP 或域名）"""
     try:
         parsed = urllib.parse.urlparse(vmess_url)
         if not parsed.scheme == "vmess":
@@ -45,8 +45,18 @@ def parse_vmess_url(vmess_url):
         print(f"Error parsing VMess URL: {str(e)}")
         return None
 
+def parse_simple_host(config):
+    """兼容 uuid@ip[:port] 简易格式"""
+    try:
+        if '@' in config:
+            host_port = config.split('@')[-1]
+            host = host_port.split(':')[0]
+            return host
+        return None
+    except Exception:
+        return None
+
 def kill_process_and_children(pid):
-    """强制终止进程及其子进程"""
     try:
         parent = psutil.Process(pid)
         for child in parent.children(recursive=True):
@@ -56,7 +66,6 @@ def kill_process_and_children(pid):
         pass
 
 def ping_test(host, timeout=5, ping_count=4):
-    """对 IP 或域名进行 ping 测试"""
     print(f"Starting ping test for host: {host}")
     ping_process = None
     try:
@@ -100,13 +109,10 @@ def ping_test(host, timeout=5, ping_count=4):
         print(f"Finished ping test for host: {host}")
 
 def get_node_configs():
-    """根据指定规则获取节点配置"""
     config_source = os.getenv("NODE_CONFIG_SOURCE", "single_url")
     config_urls = os.getenv("NODE_CONFIG_URLS", "https://raw.githubusercontent.com/sevcator/5ubscrpt10n/main/protocols/vl.txt").split(",")
     local_files = os.getenv("NODE_CONFIG_FILES", "").split(",")
-    
     node_configs = []
-    
     if config_source == "single_url":
         print(f"Fetching nodes from single URL: {config_urls[0]}")
         try:
@@ -116,7 +122,6 @@ def get_node_configs():
             print(f"Downloaded {len(node_configs)} nodes from {config_urls[0]}")
         except requests.RequestException as e:
             print(f"Error fetching nodes from {config_urls[0]}: {str(e)}")
-    
     elif config_source == "multiple_urls":
         for url in config_urls:
             if not url.strip():
@@ -129,7 +134,6 @@ def get_node_configs():
                 print(f"Downloaded {len(response.text.splitlines())} nodes from {url}")
             except requests.RequestException as e:
                 print(f"Error fetching nodes from {url}: {str(e)}")
-    
     elif config_source == "local_files":
         for file_path in local_files:
             if not file_path.strip():
@@ -144,7 +148,6 @@ def get_node_configs():
                     print(f"Local file not found: {file_path}")
             except Exception as e:
                 print(f"Error reading local file {file_path}: {str(e)}")
-    
     node_configs = list(dict.fromkeys([config.strip() for config in node_configs if config.strip()]))
     return node_configs
 
@@ -152,12 +155,10 @@ def main():
     os.makedirs("results", exist_ok=True)
     output_file = "results/ping_test_results.txt"
     valid_configs_file = "results/valid_vless_configs.txt"
-    
     start_time = time.time()
     print("Fetching node configurations...")
     node_configs = get_node_configs()
     print(f"Total unique nodes fetched: {len(node_configs)}")
-
     valid_configs = []
     with open(output_file, "w") as f:
         f.write(f"Ping Test Results - {time.strftime('%Y-%m-%d %H:%M:%S')}\n")
@@ -170,11 +171,14 @@ def main():
                 node_info = parse_vless_url(config)
             elif config.startswith("vmess://"):
                 node_info = parse_vmess_url(config)
+            elif '@' in config:  # 兼容 uuid@ip[:port] 格式
+                host = parse_simple_host(config)
+                if host:
+                    node_info = {"protocol": "simple", "host": host, "original_url": config}
             else:
                 f.write(f"Node: {config[:50]}... Status: SKIPPED (Unsupported protocol)\n")
                 print(f"Skipping unsupported protocol: {config[:50]}...")
                 continue
-            
             if node_info:
                 host = node_info["host"]
                 ping_result = ping_test(host)
@@ -189,12 +193,10 @@ def main():
             else:
                 f.write(f"Node: {config[:50]}... Status: INVALID\n")
                 print(f"Invalid node configuration: {config[:50]}...")
-
     with open(valid_configs_file, "w") as f:
         for config in valid_configs:
             f.write(f"{config}\n")
     print(f"Saved {len(valid_configs)} valid configurations to {valid_configs_file}")
-
     print(f"Script completed successfully. Total execution time: {time.time() - start_time:.2f} seconds")
 
 if __name__ == "__main__":
