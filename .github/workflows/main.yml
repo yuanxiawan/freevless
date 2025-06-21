@@ -28,8 +28,17 @@ jobs:
         run: |
           python test_nodes.py
 
-      - name: Upload results as artifact  # 推荐替换为 artifact 上传
+      - name: List results dir
+        run: ls -l results || echo "No results dir"
+
+      - name: Upload valid nodes as artifact
         uses: actions/upload-artifact@v4
         with:
           name: valid_vless_configs
           path: results/valid_vless_configs.txt
+
+      - name: Upload full ping test result log
+        uses: actions/upload-artifact@v4
+        with:
+          name: ping_test_results
+          path: results/ping_test_results.txt
