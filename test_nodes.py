@@ -7,6 +7,8 @@ import time
 import uuid
 import base64
 import re
+import signal
+import psutil
 
 def parse_vless_url(vless_url):
     """解析 VLESS URL 获取主机、端口、用户 ID 和其他参数"""
@@ -129,19 +131,33 @@ def create_xray_config(node_info, config_path):
     with open(config_path, "w") as f:
         json.dump(config, f, indent=2)
 
+def kill_process_and_children(pid):
+    """强制终止进程及其子进程"""
+    try:
+        parent = psutil.Process(pid)
+        for child in parent.children(recursive=True):
+            child.kill()
+        parent.kill()
+    except psutil.NoSuchProcess:
+        pass
+
 def test_node(node_info, timeout=5):
-    """测试节点连通性、延迟、带宽和丢包率"""
+    """测试节点连通性、延迟和丢包率"""
     if not node_info:
-        return "INVALID", None, None, None
+        return "INVALID", None, None
     config_path = f"config_{uuid.uuid4()}.json"
+    xray_process = None
+    print(f"Starting test for node: {node_info['host']}:{node_info['port']}")
     try:
         create_xray_config(node_info, config_path)
         xray_process = subprocess.Popen(
             ["./xray/xray", "run", "-c", config_path],
             stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE
+            stderr=subprocess.PIPE,
+            preexec_fn=os.setsid  # 为 Linux 创建进程组
         )
         time.sleep(1)
+        print(f"Xray process started with PID: {xray_process.pid}")
 
         start_time = time.time()
         try:
@@ -151,37 +167,20 @@ def test_node(node_info, timeout=5):
                     "-x", "socks5://127.0.0.1:1080",
                     "https://www.google.com",
                     "--connect-timeout", str(timeout),
-                    "--max-time", str(timeout)
+                    "--max-time", str(timeout),
+                    "--silent"
                 ],
                 capture_output=True,
-                text=True
+                text=True,
+                timeout=timeout + 1  # 额外超时保护
             )
             latency = (time.time() - start_time) * 1000
             status = "OK" if result.returncode == 0 else "FAILED"
-        except subprocess.SubprocessError:
+            print(f"Connectivity test completed: {status}, Latency: {latency:.2f} ms")
+        except (subprocess.SubprocessError, subprocess.TimeoutExpired):
             status = "FAILED"
             latency = None
-
-        bandwidth = None
-        if status == "OK":
-            try:
-                start_time = time.time()
-                result = subprocess.run(
-                    [
-                        "curl",
-                        "-x", "socks5://127.0.0.1:1080",
-                        "https://speed.cloudflare.com/__down?bytes=1000000",
-                        "--max-time", "10",
-                        "-o", "/dev/null",
-                        "--write-out", "%{speed_download}"
-                    ],
-                    capture_output=True,
-                    text=True
-                )
-                if result.returncode == 0:
-                    bandwidth = float(result.stdout) / 1024 / 1024
-            except subprocess.SubprocessError:
-                bandwidth = None
+            print("Connectivity test failed or timed out")
 
         packet_loss = None
         if status == "OK":
@@ -195,7 +194,8 @@ def test_node(node_info, timeout=5):
                         node_info["host"]
                     ],
                     capture_output=True,
-                    text=True
+                    text=True,
+                    timeout=ping_count * 2
                 )
                 if result.returncode == 0:
                     for line in result.stdout.splitlines():
@@ -203,22 +203,33 @@ def test_node(node_info, timeout=5):
                             loss_str = line.split("%")[0].split()[-1]
                             packet_loss = float(loss_str)
                             break
-            except subprocess.SubprocessError:
+                    print(f"Packet loss test completed: {packet_loss:.1f}%")
+            except (subprocess.SubprocessError, subprocess.TimeoutExpired):
                 packet_loss = None
+                print("Packet loss test failed or timed out")
 
-        xray_process.terminate()
-        try:
-            xray_process.wait(timeout=2)
-        except subprocess.TimeoutExpired:
-            xray_process.kill()
-        
-        return status, latency, bandwidth, packet_loss
+        return status, latency, packet_loss
     except Exception as e:
         print(f"Error testing node {node_info['host']}:{node_info['port']}: {str(e)}")
-        return "ERROR", None, None, None
+        return "ERROR", None, None
     finally:
+        if xray_process:
+            try:
+                print(f"Terminating Xray process with PID: {xray_process.pid}")
+                os.killpg(os.getpgid(xray_process.pid), signal.SIGTERM)  # 终止进程组
+                xray_process.wait(timeout=2)
+            except (subprocess.TimeoutExpired, ProcessLookupError):
+                print(f"Forcing kill of Xray process with PID: {xray_process.pid}")
+                kill_process_and_children(xray_process.pid)
+            except Exception as e:
+                print(f"Error terminating Xray process: {str(e)}")
         if os.path.exists(config_path):
-            os.remove(config_path)
+            try:
+                os.remove(config_path)
+                print(f"Removed temporary config file: {config_path}")
+            except Exception as e:
+                print(f"Error removing config file {config_path}: {str(e)}")
+        print(f"Finished test for node: {node_info['host']}:{node_info['port']}")
 
 def create_grouped_config(nodes, group_name, output_path):
     """为分组生成 Xray 配置文件"""
@@ -269,13 +280,17 @@ def main():
     output_file = "results/vless_test_results.txt"
     valid_nodes_file = "results/valid_nodes.json"
     
+    start_time = time.time()
+    print("Downloading node configurations...")
     try:
-        response = requests.get(config_url)
+        response = requests.get(config_url, timeout=10)
         response.raise_for_status()
         node_configs = response.text.splitlines()
+        print(f"Downloaded {len(node_configs)} node configurations")
     except requests.RequestException as e:
         with open(output_file, "w") as f:
             f.write(f"Error downloading node configs: {str(e)}\n")
+        print(f"Error downloading node configs: {str(e)}")
         return
 
     valid_nodes = []
@@ -293,40 +308,39 @@ def main():
                 node_info = parse_vmess_url(config)
             else:
                 f.write(f"Node: {config[:50]}... Status: SKIPPED (Unsupported protocol)\n")
+                print(f"Skipping unsupported protocol: {config[:50]}...")
                 continue
             
             if node_info:
-                status, latency, bandwidth, packet_loss = test_node(node_info)
+                status, latency, packet_loss = test_node(node_info)
                 latency_str = f"{latency:.2f} ms" if latency else "N/A"
-                bandwidth_str = f"{bandwidth:.2f} MB/s" if bandwidth else "N/A"
                 packet_loss_str = f"{packet_loss:.1f}%" if packet_loss is not None else "N/A"
                 f.write(
                     f"Node: {config[:50]}... Protocol: {node_info['protocol'].upper()}, "
-                    f"Status: {status}, Latency: {latency_str}, "
-                    f"Bandwidth: {bandwidth_str}, Packet Loss: {packet_loss_str}\n"
+                    f"Status: {status}, Latency: {latency_str}, Packet Loss: {packet_loss_str}\n"
                 )
                 if status == "OK":
                     node_info["metrics"] = {
                         "latency": latency,
-                        "bandwidth": bandwidth if bandwidth else 0,
                         "packet_loss": packet_loss if packet_loss is not None else 100
                     }
                     node_info["location"] = infer_location(node_info["host"])
                     valid_nodes.append(node_info)
             else:
                 f.write(f"Node: {config[:50]}... Status: INVALID\n")
+                print(f"Invalid node configuration: {config[:50]}...")
 
+    print("Sorting valid nodes...")
     valid_nodes.sort(
         key=lambda x: (
             x["metrics"]["latency"] or float('inf'),
-            -x["metrics"]["bandwidth"],
             x["metrics"]["packet_loss"]
         )
     )
 
+    print("Grouping nodes by protocol and location...")
     vless_nodes = [node for node in valid_nodes if node["protocol"] == "vless"]
     vmess_nodes = [node for node in valid_nodes if node["protocol"] == "vmess"]
-
     location_groups = {}
     for node in valid_nodes:
         location = node["location"]
@@ -334,6 +348,7 @@ def main():
             location_groups[location] = []
         location_groups[location].append(node)
 
+    print("Generating configuration files...")
     create_grouped_config(valid_nodes, "all", valid_nodes_file)
     if vless_nodes:
         create_grouped_config(vless_nodes, "vless", "results/valid_vless_nodes.json")
@@ -341,6 +356,8 @@ def main():
         create_grouped_config(vmess_nodes, "vmess", "results/valid_vmess_nodes.json")
     for location, nodes in location_groups.items():
         create_grouped_config(nodes, location, f"results/valid_nodes_{location}.json")
+    
+    print(f"Script completed successfully. Total execution time: {time.time() - start_time:.2f} seconds")
 
 if __name__ == "__main__":
     main()
