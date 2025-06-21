@@ -24,14 +24,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests psutil
 
-      - name: Download Xray
-        run: |
-          mkdir -p xray
-          curl -L https://github.com/XTLS/Xray-core/releases/latest/download/xray-linux-64.zip -o xray.zip
-          unzip xray.zip -d xray
-          chmod +x xray/xray
-          rm xray.zip
-
       - name: Run node tests
         run: |
           python test_nodes.py
@@ -41,7 +33,7 @@ jobs:
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
           git add results/*
-          git commit -m "Update node test results and valid nodes configs" || echo "No changes to commit"
+          git commit -m "Update valid VLESS configs" || echo "No changes to commit"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
