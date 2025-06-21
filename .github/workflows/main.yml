@@ -2,13 +2,13 @@ name: Test VLESS and VMess Nodes with Xray
 
 on:
   schedule:
-    - cron: '0 0 * * *' # 每天 UTC 时间 00:00 运行
-  workflow_dispatch: # 支持手动触发
+    - cron: '0 0 * * *'
+  workflow_dispatch:
 
 jobs:
   test-nodes:
     runs-on: ubuntu-latest
-    timeout-minutes: 60 # 限制工作流运行时间为 60 分钟
+    timeout-minutes: 60
 
     steps:
       - name: Checkout repository
@@ -28,12 +28,8 @@ jobs:
         run: |
           python test_nodes.py
 
-      - name: Commit and push results
-        run: |
-          git config --global user.name 'GitHub Action'
-          git config --global user.email 'action@github.com'
-          git add results/*
-          git commit -m "Update valid VLESS configs" || echo "No changes to commit"
-          git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Upload results as artifact  # 推荐替换为 artifact 上传
+        uses: actions/upload-artifact@v4
+        with:
+          name: valid_vless_configs
+          path: results/valid_vless_configs.txt
