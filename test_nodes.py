@@ -71,10 +71,11 @@ def main():
             if ok:
                 # 只要 ping 通，就保存 config（即原始节点信息）
                 valid_nodes.append(config)
-    with open("results/valid_nodes.txt", "w") as fvalid:
+    # 无论是否有可用节点都生成结果文件，保证 artifact 步骤不会报错
+    with open("results/valid_vless_configs.txt", "w") as fvalid:
         for c in valid_nodes:
             fvalid.write(f"{c}\n")
-    print(f"已保存可用节点 {len(valid_nodes)} 条到 results/valid_nodes.txt")
+    print(f"已保存可用节点 {len(valid_nodes)} 条到 results/valid_vless_configs.txt")
 
 if __name__ == "__main__":
     main()
