@@ -1,0 +1,46 @@
+name: Test VLESS and VMess Nodes with Xray
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # 每天 UTC 时间 00:00 运行
+  workflow_dispatch: # 支持手动触发
+
+jobs:
+  test-nodes:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Download Xray
+        run: |
+          mkdir -p xray
+          curl -L https://github.com/XTLS/Xray-core/releases/latest/download/xray-linux-64.zip -o xray.zip
+          unzip xray.zip -d xray
+          chmod +x xray/xray
+          rm xray.zip
+
+      - name: Run node tests
+        run: |
+          python test_nodes.py
+
+      - name: Commit and push results
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          git add results/*
+          git commit -m "Update node test results and valid nodes configs" || echo "No changes to commit"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
