@@ -37,7 +37,6 @@ def to_vless(config):
             return config
         elif config.startswith("vmess://"):
             vmess_str = config[8:]
-            # 补全base64
             padded = vmess_str + '=' * (-len(vmess_str) % 4)
             data = base64.b64decode(padded).decode("utf-8")
             info = json.loads(data)
@@ -45,9 +44,24 @@ def to_vless(config):
             port = info.get("port", "443")
             uuid = info.get("id")
             network = info.get("net", "tcp")
-            vless_url = f"vless://{uuid}@{host}:{port}?encryption=none&type={network}#from_vmess"
+            # 组装参数
+            params = []
+            params.append("encryption=none")
+            params.append(f"type={network}")
+            if info.get("host"):
+                params.append(f"host={info.get('host')}")
+            if info.get("sni"):
+                params.append(f"sni={info.get('sni')}")
+            if info.get("path"):
+                params.append(f"path={info.get('path')}")
+            if info.get("alpn"):
+                params.append(f"alpn={info.get('alpn')}")
+            if info.get("serviceName"):
+                params.append(f"serviceName={info.get('serviceName')}")
+            param_str = "&".join(params)
+            tag = info.get("ps", "from_vmess")
+            vless_url = f"vless://{uuid}@{host}:{port}?{param_str}#{tag}"
             return vless_url
-        # 其他协议可按需增加
     except Exception as e:
         logging.warning(f"协议转换失败: {e} | config={config[:60]}")
     return None
@@ -80,7 +94,10 @@ def extract_host(config):
     try:
         if config.startswith("vless://"):
             parsed = urllib.parse.urlparse(config)
-            host = parsed.netloc.split(":")[0]
+            netloc = parsed.netloc
+            if "@" in netloc:
+                netloc = netloc.split("@", 1)[1]
+            host = netloc.split(":", 1)[0]
             return host
     except Exception as e:
         logging.warning(f"提取host失败: {e} | config={config[:60]}")
@@ -127,7 +144,7 @@ def main():
         for future in as_completed(future_to_vless):
             vless, host, ok, ping_log = future.result()
             status = "OK" if ok else "FAILED"
-            ping_results.append(f"Node: {vless[:60]}... Host: {host}, Status: {status}\nPing log:\n{ping_log}\n{'='*40}\n")
+            ping_results.append(f"Node: {vless}\nHost: {host}, Status: {status}\nPing log:\n{ping_log}\n{'='*40}\n")
             if ok:
                 valid_nodes.append(vless)
 
