@@ -42,17 +42,6 @@ jobs:
         with:
           name: ping_test_results
           path: results/ping_test_results.txt
-      - name: Upload valid nodes as artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: valid_vless_configs
-          path: results/valid_vless_configs.txt
-
-      - name: Upload full ping test result log
-        uses: actions/upload-artifact@v4
-        with:
-          name: ping_test_results
-          path: results/ping_test_results.txt
 
       - name: Commit and push results to repository
         run: |
