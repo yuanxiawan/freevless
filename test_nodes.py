@@ -9,6 +9,7 @@ import logging
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # 日志配置
+os.makedirs("results", exist_ok=True)
 logging.basicConfig(
     filename="results/node_test.log",
     level=logging.INFO,
@@ -39,9 +40,8 @@ def to_vless(config):
             host = info.get("add")
             port = info.get("port", "443")
             uuid = info.get("id")
-            alterId = info.get("aid", "0")
             network = info.get("net", "tcp")
-            vless_url = f"vless://{uuid}@{host}:{port}?encryption=none&alterId={alterId}&type={network}#from_vmess"
+            vless_url = f"vless://{uuid}@{host}:{port}?encryption=none&type={network}#from_vmess"
             return vless_url
         # 其他协议可按需增加
     except Exception as e:
@@ -67,23 +67,23 @@ def ping_host(host, timeout=5, count=3):
         out, err = proc.communicate(timeout=timeout + 2)
         if proc.returncode == 0:
             logging.info(f"Ping成功: {host}")
-            return True
+            return True, out
         else:
             logging.info(f"Ping失败: {host} | 输出: {out.strip()} | 错误: {err.strip()}")
-            return False
+            return False, out + err
     except Exception as e:
         logging.error(f"Ping主机异常: {host} | 错误: {e}")
-        return False
+        return False, str(e)
 
 def ping_worker(vless):
     host = extract_host(vless)
-    if host and ping_host(host):
-        return vless
-    return None
+    if host:
+        ok, ping_log = ping_host(host)
+        return vless, host, ok, ping_log
+    return vless, None, False, "无法提取host"
 
 def main():
     nodes_url = "https://raw.githubusercontent.com/sevcator/5ubscrpt10n/main/protocols/vl.txt"
-    os.makedirs("results", exist_ok=True)
     all_nodes = fetch_unique_nodes(nodes_url)
     vless_nodes = []
     for node in all_nodes:
@@ -93,26 +93,29 @@ def main():
     logging.info(f"优化为vless节点: {len(vless_nodes)} 条")
 
     valid_nodes = []
+    ping_results = []
     with ThreadPoolExecutor(max_workers=5) as executor:
         future_to_vless = {executor.submit(ping_worker, vless): vless for vless in vless_nodes}
         for future in as_completed(future_to_vless):
-            result = future.result()
-            if result:
-                valid_nodes.append(result)
+            vless, host, ok, ping_log = future.result()
+            status = "OK" if ok else "FAILED"
+            ping_results.append(f"Node: {vless[:60]}... Host: {host}, Status: {status}\nPing log:\n{ping_log}\n{'='*40}\n")
+            if ok:
+                valid_nodes.append(vless)
+
+    # 总是生成 ping_test_results.txt
+    with open("results/ping_test_results.txt", "w") as fout:
+        fout.write(f"Ping Test Results - {time.strftime('%Y-%m-%d %H:%M:%S')}\n")
+        fout.write("="*50 + "\n")
+        if ping_results:
+            fout.writelines(ping_results)
+        else:
+            fout.write("无可用节点或无可用结果。\n")
 
     with open("results/valid_vless_configs.txt", "w") as fout:
         for vless in valid_nodes:
             fout.write(vless + "\n")
     logging.info(f"Ping成功节点: {len(valid_nodes)} 条，已保存到 results/valid_vless_configs.txt")
-
-    # git推送（需配置好权限）
-    try:
-        os.system("git add results/valid_vless_configs.txt")
-        os.system(f'git commit -m "Update valid vless configs {time.strftime("%Y-%m-%d %H:%M:%S")}"')
-        os.system("git push")
-        logging.info("结果文件已推送到仓库。")
-    except Exception as e:
-        logging.error(f"推送到GitHub失败: {e}")
 
 if __name__ == "__main__":
     main()
