@@ -6,6 +6,8 @@ import time
 import base64
 import json
 import logging
+import re
+import ipaddress
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # 日志配置
@@ -35,7 +37,9 @@ def to_vless(config):
             return config
         elif config.startswith("vmess://"):
             vmess_str = config[8:]
-            data = base64.b64decode(vmess_str + '=' * (-len(vmess_str) % 4)).decode("utf-8")
+            # 补全base64
+            padded = vmess_str + '=' * (-len(vmess_str) % 4)
+            data = base64.b64decode(padded).decode("utf-8")
             info = json.loads(data)
             host = info.get("add")
             port = info.get("port", "443")
@@ -47,6 +51,30 @@ def to_vless(config):
     except Exception as e:
         logging.warning(f"协议转换失败: {e} | config={config[:60]}")
     return None
+
+def is_valid_vless_url(vless_url):
+    # 校验vless://uuid@host:port?xxx#xxx
+    pattern = re.compile(r"^vless://[0-9a-fA-F\-]{36}@([\w\.\-]+):(\d+)\?.+#")
+    match = pattern.match(vless_url)
+    if not match:
+        return False
+    host, port = match.groups()
+    # 校验端口
+    try:
+        port = int(port)
+        if not (0 < port < 65536):
+            return False
+    except Exception:
+        return False
+    # 校验host为合法IP或域名
+    try:
+        ipaddress.ip_address(host)
+        return True
+    except ValueError:
+        # 尝试校验为域名
+        if re.match(r"^[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,}$", host):
+            return True
+    return False
 
 def extract_host(config):
     try:
@@ -88,9 +116,9 @@ def main():
     vless_nodes = []
     for node in all_nodes:
         vless = to_vless(node)
-        if vless:
+        if vless and is_valid_vless_url(vless):
             vless_nodes.append(vless)
-    logging.info(f"优化为vless节点: {len(vless_nodes)} 条")
+    logging.info(f"优化为有效vless节点: {len(vless_nodes)} 条")
 
     valid_nodes = []
     ping_results = []
