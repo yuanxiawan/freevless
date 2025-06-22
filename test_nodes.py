@@ -8,6 +8,7 @@ import json
 import logging
 import re
 import ipaddress
+import random
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # 日志配置
@@ -19,13 +20,19 @@ logging.basicConfig(
     datefmt="%Y-%m-%d %H:%M:%S"
 )
 
-def fetch_unique_nodes(url):
+def fetch_unique_nodes(url, sample_count=50):
     try:
         res = requests.get(url, timeout=10)
         res.raise_for_status()
-        unique_lines = set(line.strip() for line in res.text.splitlines() if line.strip())
+        unique_lines = list(set(line.strip() for line in res.text.splitlines() if line.strip()))
         logging.info(f"成功获取节点，总数: {len(unique_lines)}")
-        return list(unique_lines)
+        # 随机采样 sample_count 条
+        if len(unique_lines) > sample_count:
+            sampled = random.sample(unique_lines, sample_count)
+        else:
+            sampled = unique_lines
+        logging.info(f"本次随机采样节点数: {len(sampled)}")
+        return sampled
     except Exception as e:
         logging.error(f"获取节点失败: {e}")
         return []
@@ -67,25 +74,21 @@ def to_vless(config):
     return None
 
 def is_valid_vless_url(vless_url):
-    # 校验vless://uuid@host:port?xxx#xxx
     pattern = re.compile(r"^vless://[0-9a-fA-F\-]{36}@([\w\.\-]+):(\d+)\?.+#")
     match = pattern.match(vless_url)
     if not match:
         return False
     host, port = match.groups()
-    # 校验端口
     try:
         port = int(port)
         if not (0 < port < 65536):
             return False
     except Exception:
         return False
-    # 校验host为合法IP或域名
     try:
         ipaddress.ip_address(host)
         return True
     except ValueError:
-        # 尝试校验为域名
         if re.match(r"^[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,}$", host):
             return True
     return False
@@ -109,7 +112,13 @@ def ping_host(host, timeout=5, count=3):
             ["ping", "-c", str(count), "-W", str(timeout), host],
             stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True
         )
-        out, err = proc.communicate(timeout=timeout + 2)
+        try:
+            out, err = proc.communicate(timeout=(timeout + 2) * count)
+        except subprocess.TimeoutExpired:
+            proc.kill()
+            out, err = proc.communicate()
+            logging.error(f"Ping主机超时: {host}")
+            return False, "Ping超时"
         if proc.returncode == 0:
             logging.info(f"Ping成功: {host}")
             return True, out
@@ -129,7 +138,7 @@ def ping_worker(vless):
 
 def main():
     nodes_url = "https://raw.githubusercontent.com/sevcator/5ubscrpt10n/main/protocols/vl.txt"
-    all_nodes = fetch_unique_nodes(nodes_url)
+    all_nodes = fetch_unique_nodes(nodes_url, sample_count=50)
     vless_nodes = []
     for node in all_nodes:
         vless = to_vless(node)
@@ -148,7 +157,6 @@ def main():
             if ok:
                 valid_nodes.append(vless)
 
-    # 总是生成 ping_test_results.txt
     with open("results/ping_test_results.txt", "w") as fout:
         fout.write(f"Ping Test Results - {time.strftime('%Y-%m-%d %H:%M:%S')}\n")
         fout.write("="*50 + "\n")
