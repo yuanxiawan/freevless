@@ -1,6 +1,6 @@
 import requests
 import urllib.parse
-import subprocess
+import socket
 import os
 import time
 import base64
@@ -51,7 +51,6 @@ def to_vless(config):
             port = info.get("port", "443")
             uuid = info.get("id")
             network = info.get("net", "tcp")
-            # 组装参数
             params = []
             params.append("encryption=none")
             params.append(f"type={network}")
@@ -93,48 +92,42 @@ def is_valid_vless_url(vless_url):
             return True
     return False
 
-def extract_host(config):
+def extract_host_port(config):
+    # 返回 host, port
     try:
         if config.startswith("vless://"):
             parsed = urllib.parse.urlparse(config)
             netloc = parsed.netloc
             if "@" in netloc:
                 netloc = netloc.split("@", 1)[1]
-            host = netloc.split(":", 1)[0]
-            return host
+            parts = netloc.split(":", 1)
+            host = parts[0]
+            port = "443"  # 默认端口
+            if len(parts) > 1 and parts[1].isdigit():
+                port = parts[1]
+            else:
+                # 尝试从 query 里取 port
+                q = urllib.parse.parse_qs(parsed.query)
+                if "port" in q and q["port"][0].isdigit():
+                    port = q["port"][0]
+            return host, port
     except Exception as e:
-        logging.warning(f"提取host失败: {e} | config={config[:60]}")
-    return None
+        logging.warning(f"提取host/port失败: {e} | config={config[:60]}")
+    return None, None
 
-def ping_host(host, timeout=5, count=3):
+def tcp_connect(host, port, timeout=5):
     try:
-        proc = subprocess.Popen(
-            ["ping", "-c", str(count), "-W", str(timeout), host],
-            stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True
-        )
-        try:
-            out, err = proc.communicate(timeout=(timeout + 2) * count)
-        except subprocess.TimeoutExpired:
-            proc.kill()
-            out, err = proc.communicate()
-            logging.error(f"Ping主机超时: {host}")
-            return False, "Ping超时"
-        if proc.returncode == 0:
-            logging.info(f"Ping成功: {host}")
-            return True, out
-        else:
-            logging.info(f"Ping失败: {host} | 输出: {out.strip()} | 错误: {err.strip()}")
-            return False, out + err
+        with socket.create_connection((host, int(port)), timeout=timeout):
+            return True, "TCP连接成功"
     except Exception as e:
-        logging.error(f"Ping主机异常: {host} | 错误: {e}")
-        return False, str(e)
+        return False, f"TCP连接失败: {e}"
 
-def ping_worker(vless):
-    host = extract_host(vless)
-    if host:
-        ok, ping_log = ping_host(host)
-        return vless, host, ok, ping_log
-    return vless, None, False, "无法提取host"
+def connect_worker(vless):
+    host, port = extract_host_port(vless)
+    if host and port:
+        ok, log = tcp_connect(host, port)
+        return vless, host, port, ok, log
+    return vless, None, None, False, "无法提取host或port"
 
 def main():
     nodes_url = "https://raw.githubusercontent.com/sevcator/5ubscrpt10n/main/protocols/vl.txt"
@@ -147,28 +140,28 @@ def main():
     logging.info(f"优化为有效vless节点: {len(vless_nodes)} 条")
 
     valid_nodes = []
-    ping_results = []
+    connect_results = []
     with ThreadPoolExecutor(max_workers=5) as executor:
-        future_to_vless = {executor.submit(ping_worker, vless): vless for vless in vless_nodes}
+        future_to_vless = {executor.submit(connect_worker, vless): vless for vless in vless_nodes}
         for future in as_completed(future_to_vless):
-            vless, host, ok, ping_log = future.result()
+            vless, host, port, ok, logtxt = future.result()
             status = "OK" if ok else "FAILED"
-            ping_results.append(f"Node: {vless}\nHost: {host}, Status: {status}\nPing log:\n{ping_log}\n{'='*40}\n")
+            connect_results.append(f"Node: {vless}\nHost: {host}, Port: {port}, Status: {status}\nTCP log:\n{logtxt}\n{'='*40}\n")
             if ok:
                 valid_nodes.append(vless)
 
     with open("results/ping_test_results.txt", "w") as fout:
-        fout.write(f"Ping Test Results - {time.strftime('%Y-%m-%d %H:%M:%S')}\n")
+        fout.write(f"TCP Connect Test Results - {time.strftime('%Y-%m-%d %H:%M:%S')}\n")
         fout.write("="*50 + "\n")
-        if ping_results:
-            fout.writelines(ping_results)
+        if connect_results:
+            fout.writelines(connect_results)
         else:
             fout.write("无可用节点或无可用结果。\n")
 
     with open("results/valid_vless_configs.txt", "w") as fout:
         for vless in valid_nodes:
             fout.write(vless + "\n")
-    logging.info(f"Ping成功节点: {len(valid_nodes)} 条，已保存到 results/valid_vless_configs.txt")
+    logging.info(f"TCP连接成功节点: {len(valid_nodes)} 条，已保存到 results/valid_vless_configs.txt")
 
 if __name__ == "__main__":
     main()
