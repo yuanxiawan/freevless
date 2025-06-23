@@ -1,448 +1,217 @@
-Ping Test Results - 2025-06-22 05:08:56
+TCP Connect Test Results - 2025-06-23 00:28:49
 ==================================================
-Node: vless://34462e1f-28f5-4db7-8020-ca15aa1e72fc@162.159.135.234:8443?security=tls&sni=v-2rey-channel.pages.dev&type=ws&host=v-2rey-channel.pages.dev&path=%2FTeleram%3A+%40v_2ray#Join+Telegram:@Farah_VPN
-Host: 162.159.135.234, Status: FAILED
-Ping log:
-PING 162.159.135.234 (162.159.135.234) 56(84) bytes of data.
-
---- 162.159.135.234 ping statistics ---
-3 packets transmitted, 0 received, 100% packet loss, time 2048ms
-
-
+Node: vless://0b565e9b-667a-4a9f-8472-b7ccda739cb7@151.101.192.223:80?security=none&type=xhttp&host=bia_to_vmessorg.ir&path=%2F%40vmessorg----%40vmessorg-----%40vmessorg----%40vmessorg----%40vmessorg----%40vmessorg----%40vmessorg----%40vmessorg----%40vmessorg----%40vmessorg----%40vmessorg----%40vmessorg%3Fed%3D2480# VL-XHTTP-NONE  US-151.101.192.223:80
+Host: 151.101.192.223, Port: 80, Status: OK
+TCP log:
+TCP连接成功
 ========================================
-Node: vless://103104c5-a3f5-4c48-8d8f-a72a56959799@104.17.1.5:443?security=tls&type=ws&sni=ZYzzZoAO.putata.eU.Org&host=ZYzzZoAO.putata.eU.Org&encryption=none&type=ws&path=%2F&sni=ZYzzZoAO.putata.eU.Org&headerType=none#%E4%BA%8C%E7%88%B7%E7%BF%BB%E5%A2%99_6
-Host: 104.17.1.5, Status: FAILED
-Ping log:
-PING 104.17.1.5 (104.17.1.5) 56(84) bytes of data.
-
---- 104.17.1.5 ping statistics ---
-3 packets transmitted, 0 received, 100% packet loss, time 2048ms
-
-
+Node: vless://4b33b482-25bc-49e4-b866-878c914d945a@172.67.155.140:443?security=tls&sni=iIiiIiiIiIIO.HuanGsHaNg.dpDns.ORG&type=ws&host=iiiiiiiiiiio.huangshang.dpdns.org&path=%2FCpMgWdnDWahQyyQCjn8kmnN0ehd&fp=chrome&alpn=http%2F1.1#4Mohsen-10958
+Host: 172.67.155.140, Port: 443, Status: OK
+TCP log:
+TCP连接成功
 ========================================
-Node: vless://ed29e3d0-b19c-4a7b-ed66-e770215dc1cb@104.17.147.22:2086?security=none&type=httpupgrade&host=cafebazaar.ir.novinsoft.ir.oradoshop.com.persiangsm.ir.digikala.com.abadis.ir.shad.ir.divar.ir.downloadly.com.aparat.com.cafebazar.ir.varzesh3.com.ninisite.com.abadis.ir.bama.ir.p30download.ir.telewebion.bmi.ir.shad.ir.mayket.com.ninisite.top.#[]t.me/ConfigsHub
-Host: 104.17.147.22, Status: FAILED
-Ping log:
-PING 104.17.147.22 (104.17.147.22) 56(84) bytes of data.
-
---- 104.17.147.22 ping statistics ---
-3 packets transmitted, 0 received, 100% packet loss, time 2048ms
-
-
+Node: vless://897a4bec-26b8-11e8-94be-00505695472c@172.67.163.39:443?sni=xv6.jpmj.dpdns.org&type=ws&host=xv6.jpmj.dpdns.org&allowInsecure=1#Join+Telegram:@Farah_VPN
+Host: 172.67.163.39, Port: 443, Status: OK
+TCP log:
+TCP连接成功
 ========================================
-Node: vless://53fa8faf-ba4b-4322-9c69-a3e5b1555049@45.80.111.225:80?type=ws&host=reedfree8mahsang2.redorg.ir&path=Telegram%3A%40vpnAndroid2%2F%3Fed%3D2560#Join+Telegram:@Farah_VPN
-Host: 45.80.111.225, Status: FAILED
-Ping log:
-PING 45.80.111.225 (45.80.111.225) 56(84) bytes of data.
-
---- 45.80.111.225 ping statistics ---
-3 packets transmitted, 0 received, 100% packet loss, time 2048ms
-
-
+Node: vless://f6bd2c47-99da-4bca-bf70-7186aa9e7e06@104.21.1.12:443?security=tls&sni=pHOTOgrApHipiCTureaI.IR&type=ws&host=photographipictureai.ir&path=/Telegram@mtmvpn/?ed%3D2560&fp=randomized&alpn=h2,http/1.1#[]t.me/MoftConfig
+Host: 104.21.1.12, Port: 443, Status: OK
+TCP log:
+TCP连接成功
 ========================================
-Node: vless://d342d11e-d424-4583-b36e-524ab1f0afa4@workers.cloudflare.cyou:2095?encryption=none&security=none&fp=random&type=ws&host=node.vauth.workers.dev&path=%2F%3Fed%3D2048# Vauth 192
-Host: workers.cloudflare.cyou, Status: FAILED
-Ping log:
-ping: workers.cloudflare.cyou: Name or service not known
-
+Node: vless://30afb0bd-ee92-4722-a083-e03f4d57b04c@104.17.147.22:2095?security=none&type=httpupgrade&host=h1.N.iranshopering.ir.&path=%2F%3Fed%3D2048#[]t.me/MoftConfig
+Host: 104.17.147.22, Port: 2095, Status: OK
+TCP log:
+TCP连接成功
 ========================================
-Node: vless://b83b17a9-d101-4bfc-870e-1ae040ce777f@tn6.adamlinux.ir:8051?encryption=none&security=none&type=tcp&headerType=http#VL-VIP-tn6-507
-Host: tn6.adamlinux.ir, Status: FAILED
-Ping log:
-PING radvin06.garmestan.ir (185.79.158.150) 56(84) bytes of data.
-
---- radvin06.garmestan.ir ping statistics ---
-3 packets transmitted, 0 received, 100% packet loss, time 2042ms
-
-
+Node: vless://e8a21fb1-007c-462f-a267-328bde3d0352@104.21.82.227:2053?security=tls&sni=worker-icy-wave-918c.333taim.workers.dev&type=ws&host=worker-icy-wave-918c.333taim.workers.dev&path=vless-ws%2F%3Fed%3D2048&fp=chrome&alpn=h2#4Mohsen-19832
+Host: 104.21.82.227, Port: 2053, Status: OK
+TCP log:
+TCP连接成功
 ========================================
-Node: vless://89b3cbba-e6ac-485a-9481-976a0415eab9@104.21.32.1:2087?path=%2Ftelegram%40v2ray_alpha%2F%3Fed%3D2048&security=tls&encryption=none&host=HaSti.fReEaIRlAineS.coM&fp=chrome&type=ws&sni=HASti.FReeAirlAINEs.cOm#@Vip_Security join us - 800
-Host: 104.21.32.1, Status: FAILED
-Ping log:
-PING 104.21.32.1 (104.21.32.1) 56(84) bytes of data.
-
---- 104.21.32.1 ping statistics ---
-3 packets transmitted, 0 received, 100% packet loss, time 2036ms
-
-
+Node: vless://53fa8faf-ba4b-4322-9c69-a3e5b1555049@156.238.18.58:80?sni=redw.pooriam.ir&type=ws&path=Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2%2F%3Fed#4Mohsen-11462
+Host: 156.238.18.58, Port: 80, Status: OK
+TCP log:
+TCP连接成功
 ========================================
-Node: vless://7b9481a4-a524-4333-8a0c-2c642b5606c3@104.21.112.1:2052?security=none&type=httpupgrade&host=fgvvgv.fggghbvhh-ghvghggg-fgvg-mahdi-net-irancel.BLOG&path=Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-# VL-HTTPUPGRADE-NONE  NA-104.21.112.1:2052
-Host: 104.21.112.1, Status: FAILED
-Ping log:
-PING 104.21.112.1 (104.21.112.1) 56(84) bytes of data.
-
---- 104.21.112.1 ping statistics ---
-3 packets transmitted, 0 received, 100% packet loss, time 2036ms
-
-
+Node: vless://42378558-9a53-4e1a-9846-64c8f3c372be@www.speedtest.net:2052?security=&type=ws&path=/@Maznet--@MAZNET--@Maznet--@MAZNET--@Maznet--@MAZNET--@Maznet--@MAZNET--@Maznet--@MAZNET?ed%3D2048&host=www.spEedtest.net.snApfoodsupPort.onlIne.&encryption=none#[]t.me/ConfigsHub
+Host: www.speedtest.net, Port: 2052, Status: OK
+TCP log:
+TCP连接成功
 ========================================
-Node: vless://99727208-0086-43f9-f0ad-9e30f546b822@88.216.67.104:8880?security=none&type=httpupgrade&host=hamidjon.ddigicyber.click.&path=//telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER#Join+Telegram:@Farah_VPN
-Host: 88.216.67.104, Status: FAILED
-Ping log:
-PING 88.216.67.104 (88.216.67.104) 56(84) bytes of data.
-
---- 88.216.67.104 ping statistics ---
-3 packets transmitted, 0 received, 100% packet loss, time 2037ms
-
-
+Node: vless://e497da22-d020-40fb-a1fa-bc294066a2d2@66.235.200.191:80?security=none&type=ws&host=pormang.webhost99.workers.dev&path=/@ShadowProxy66#4Mohsen-19709
+Host: 66.235.200.191, Port: 80, Status: OK
+TCP log:
+TCP连接成功
 ========================================
-Node: vless://05519058-d2ac-4f28-9e4a-2b2a1386749e@54.217.115.239:22222?path=/telegram-channel-vlessconfig-ws&security=tls&encryption=none&host=telegram-channel-vlessconfig.sohala.uk&type=ws&sni=telegram-channel-vlessconfig.sohala.uk#[]t.me/ConfigsHub
-Host: 54.217.115.239, Status: FAILED
-Ping log:
-PING 54.217.115.239 (54.217.115.239) 56(84) bytes of data.
-
---- 54.217.115.239 ping statistics ---
-3 packets transmitted, 0 received, 100% packet loss, time 2026ms
-
-
+Node: vless://df0680ca-e43c-498d-ed86-8e196eedd012@84.32.9.202:8880?security=none&type=grpc#@MoftConfigUnited StatesSecaucusping:72.02ms
+Host: 84.32.9.202, Port: 8880, Status: FAILED
+TCP log:
+TCP连接失败: timed out
 ========================================
-Node: vless://0fdf994e-c44f-4781-9d77-244b17904380@91.99.150.156:1534?security=reality&sni=stackoverflow.com&type=xhttp&path=%2FAS&fp=chrome&pbk=g23nq_R9TIMbMIGQHB6gjDNewFzrHXPcj72bTS-RtX8#Join+Telegram:@Farah_VPN
-Host: 91.99.150.156, Status: FAILED
-Ping log:
-PING 91.99.150.156 (91.99.150.156) 56(84) bytes of data.
-
---- 91.99.150.156 ping statistics ---
-3 packets transmitted, 0 received, 100% packet loss, time 2037ms
-
-
+Node: vless://7f93e196-1b2f-4a42-8051-5815554c05db@54.242.43.74:443?security=tls&flow=xtls-rprx-vision-udp443&sni=zula.ir&fp=chrome&allowInsecure=0#@MoftConfigUnited StatesAshburnping:110.81ms
+Host: 54.242.43.74, Port: 443, Status: FAILED
+TCP log:
+TCP连接失败: timed out
 ========================================
-Node: vless://05519058-d2ac-4f28-9e4a-2b2a1386749e@13.50.175.232:22222?path=/telegram-channel-vlessconfig-ws&security=tls&encryption=none&host=telegram-channel-vlessconfig.sohala.uk&type=ws&sni=telegram-channel-vlessconfig.sohala.uk#Telegram @VlessConfig
-Host: 13.50.175.232, Status: FAILED
-Ping log:
-PING 13.50.175.232 (13.50.175.232) 56(84) bytes of data.
-
---- 13.50.175.232 ping statistics ---
-3 packets transmitted, 0 received, 100% packet loss, time 2037ms
-
-
+Node: vless://e1065297-51a3-45d9-87eb-3df3e1435188@152.42.139.46:8080?mode=gun&security=reality&encryption=none&pbk=CZWbmrDdvesNCBlbMBuvHsJiR8Hsxmsd8DWDR_2JrjM&fp=ios&type=grpc&sni=rEfErSion.Com.&sid=8e36c7e79b74a6fa#@MoftConfigThe NetherlandsAmsterdamping:38.12ms
+Host: 152.42.139.46, Port: 8080, Status: FAILED
+TCP log:
+TCP连接失败: timed out
 ========================================
-Node: vless://b5cdabf0-e048-4fa2-90da-9379b1a4926e@104.22.53.235:80?security=none&sni=cc.ailicf.us.kg&type=ws&host=cc.ailicf.us.kg&path=%2Fb5cdabf0-e04&allowInsecure=1# VL-WS-NONE  NA-104.22.53.235:80
-Host: 104.22.53.235, Status: FAILED
-Ping log:
-PING 104.22.53.235 (104.22.53.235) 56(84) bytes of data.
-
---- 104.22.53.235 ping statistics ---
-3 packets transmitted, 0 received, 100% packet loss, time 2037ms
-
-
+Node: vless://409f518c-69ab-4d57-9ecd-d5bba965ad34@151.101.128.155:80?security=none&type=ws&host=vipfast_7.com&path=%2F%40V2RAYFAST_7%40V2RAYFAST_7%40V2RAYFAST_7%40V2RAYFAST_7%40V2RAYFAST_7%40V2RAYFAST_7%40V2RAYFAST_7%40V2RAYFAST_7%40V2RAYFAST_7%40V2RAYFAST_7%40V2RAYFAST_7%40V2RAYFAST_7%40V2RAYFAST_7%40V2RAYFAST_7%40V2RAYFAST_7%40V2RAYFAST_7%40V2RAYFAST_7%40V2RAYFAST_7%40V2RAYFAST_7%40V2RAYFAST_7%40V2RAYFAST_7%40V2RAYFAST_7%40V2RAYFAST_7%40V2RAYFAST_7%3Fed%3D2048#@MoftConfigUnited StatesSan Franciscoping:8.15ms
+Host: 151.101.128.155, Port: 80, Status: OK
+TCP log:
+TCP连接成功
 ========================================
-Node: vless://6a7c2881-83f0-47ea-b05c-441a18960ef4@193.8.173.133:12443?security=tls&type=ws&path=%2F%3Fed%3D2560&host=mihu.sorry.ip-ddns.com&sni=mihu.sorry.ip-ddns.com&fp=random#%F0%9F%87%AC%F0%9F%87%A7%20%E4%B8%80%E5%85%83%E6%9C%BA%E5%9C%BA%3Assrsub.de%20%E8%8B%B1%E5%9B%BD%2003
-Host: 193.8.173.133, Status: FAILED
-Ping log:
-PING 193.8.173.133 (193.8.173.133) 56(84) bytes of data.
-
---- 193.8.173.133 ping statistics ---
-3 packets transmitted, 0 received, 100% packet loss, time 2037ms
-
-
+Node: vless://fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf@156.238.18.28:8880?type=ws&host=us.laoyoutiao.link&path=/Telegram# VL-WS-NA  JP-156.238.18.28:8880
+Host: 156.238.18.28, Port: 8880, Status: OK
+TCP log:
+TCP连接成功
 ========================================
-Node: vless://ea286109-d20f-415e-849e-4af20ab04b65@139.185.34.131:443?security=tls&sni=147135001195.sec22org.com&type=tcp&fp=chrome#4Kian-18623
-Host: 139.185.34.131, Status: FAILED
-Ping log:
-PING 139.185.34.131 (139.185.34.131) 56(84) bytes of data.
-
---- 139.185.34.131 ping statistics ---
-3 packets transmitted, 0 received, 100% packet loss, time 2037ms
-
-
+Node: vless://41398380-2073-4d85-878a-24194a6f04a3@172.67.176.159:80?path=%2FSy0HOf5sZffep0QQ%3Fed%3D2560&security=none&encryption=none&host=3.azadteam.workers.dev&type=ws#@MoftConfigCanadaTorontoping:8.09ms
+Host: 172.67.176.159, Port: 80, Status: OK
+TCP log:
+TCP连接成功
 ========================================
-Node: vless://6bc29783-3ff6-4379-8650-611a7095307b@54.179.186.107:443?security=tls&flow=xtls-rprx-vision-udp443&sni=yfsg-1.xn--4gq62f52gppi29k.com&fp=ios&allowInsecure=0#4Kian-12402
-Host: 54.179.186.107, Status: FAILED
-Ping log:
-PING 54.179.186.107 (54.179.186.107) 56(84) bytes of data.
-
---- 54.179.186.107 ping statistics ---
-3 packets transmitted, 0 received, 100% packet loss, time 2037ms
-
-
+Node: vless://54ffbe99-7aaf-4ceb-9a82-048fb2489757@46.203.248.224:20411?security=reality&encryption=none&pbk=9rx7JwMO-KRZZEM9TQBO19BOAmmGjJyjN86ll2J7uVc&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=www.speedtest.net#[]t.me/ConfigsHub
+Host: 46.203.248.224, Port: 20411, Status: FAILED
+TCP log:
+TCP连接失败: timed out
 ========================================
-Node: vless://47d7d5eb-55e6-4085-a155-bdf3fcc428f6@64.225.123.2:59483?security=auto&type=grpc&fp=chrome#[]t.me/ConfigsHub
-Host: 64.225.123.2, Status: FAILED
-Ping log:
-PING 64.225.123.2 (64.225.123.2) 56(84) bytes of data.
-
---- 64.225.123.2 ping statistics ---
-3 packets transmitted, 0 received, 100% packet loss, time 2037ms
-
-
+Node: vless://4a3dc64b-17e1-4ae7-a9a4-851f9794d4c6@216.230.233.49:25536?flow=xtls-rprx-vision&type=tcp&security=reality&fp=chrome&sni=apps.apple.com&pbk=ydfJ-qHuqDCqmGnFbRwzqYT7gA9mWoh0gtYvMzt8OmI&sid=fc3d&spx=/@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn#[]t.me/ConfigsHub
+Host: 216.230.233.49, Port: 25536, Status: OK
+TCP log:
+TCP连接成功
 ========================================
-Node: vless://59860b15-b2d9-47f9-9b92-81bd1639fcc5@104.22.15.132:8443?path=%2F%3Fed%3D%23TELEGRAM-MARAMBASHI_MARAMBASHI%3Fed%3D512&security=tls&encryption=none&host=5-55sfjslf.ifenxiang.cfd&fp=random&type=ws&sni=5-55sfjslf.ifenxiang.cfd#[]t.me/ConfigsHub
-Host: 104.22.15.132, Status: FAILED
-Ping log:
-PING 104.22.15.132 (104.22.15.132) 56(84) bytes of data.
-
---- 104.22.15.132 ping statistics ---
-3 packets transmitted, 0 received, 100% packet loss, time 2037ms
-
-
+Node: vless://8d4d81ee-5928-4617-8726-22a47164e766@whatismyipaddress.com:2096?encryption=none&security=tls&sni=wwwspeedtestnetwhiteberinsistomd6625996s25.elitemizban.ir&type=ws&host=wwwspeedtestnetwhiteberinsistomd6625996s25.elitemizban.ir# @MoftConfigCanada
+Host: whatismyipaddress.com, Port: 2096, Status: OK
+TCP log:
+TCP连接成功
 ========================================
-Node: vless://9ad6196e-9332-4ba8-a60f-efd3bba1f37b@23.227.39.179:443?security=tls&sni=n2vpn.projectis.ir&type=ws&host=n2vpn.projectis.ir&path=%2F%40n2vpn&fp=chrome# VL-WS-TLS  CA-23.227.39.179:443
-Host: 23.227.39.179, Status: FAILED
-Ping log:
-PING 23.227.39.179 (23.227.39.179) 56(84) bytes of data.
-
---- 23.227.39.179 ping statistics ---
-3 packets transmitted, 0 received, 100% packet loss, time 2037ms
-
-
+Node: vless://721a6c8e-809f-404d-91d6-582860af9cc3@142.251.46.174:443?security=tls&sni=google.com&type=ws&host=gtest-638114869974.europe-west4.run.app&path=%2FrWUMkmNJBTurxq6Hlt8D6ftJ8qP7&fp=chrome&alpn=http/1.1# VL-WS-TLS  US-142.251.46.174:443
+Host: 142.251.46.174, Port: 443, Status: OK
+TCP log:
+TCP连接成功
 ========================================
-Node: vless://9d07f08e-5f89-4654-83cc-2f2ece38d286@www.speedtest.net:80?path=%2FISVvpn%3Fed%3D2048&security=none&encryption=none&host=https.ne.google.com.www.speedtest.net.www.speedtest.neet.speedtest.g7.isvpy.ir.&type=httpupgrade#@MoftConfigCanadaTorontoping:15.32ms
-Host: www.speedtest.net, Status: FAILED
-Ping log:
-PING www.speedtest.net.cdn.cloudflare.net (104.17.147.22) 56(84) bytes of data.
-
---- www.speedtest.net.cdn.cloudflare.net ping statistics ---
-3 packets transmitted, 0 received, 100% packet loss, time 2031ms
-
-
+Node: vless://93a55bf9-7f6c-4a4c-a547-25099f0aaea5@84.234.29.161:3497?flow=xtls-rprx-vision&type=tcp&headerType=none&host=JOKERRVPNTELEGRAM--JOin--&security=reality&fp=chrome&sni=stackoverflow.com&pbk=b8OPGu6BSDMri-vGoSfahMJIO0trHltObYllhUYcAT0&sid=b5e0d7&spx=/JOKERRVPNJoin_Bade_Channel@JOKERRVPN#[]t.me/MoftConfig
+Host: 84.234.29.161, Port: 3497, Status: FAILED
+TCP log:
+TCP连接失败: [Errno 111] Connection refused
 ========================================
-Node: vless://59860b15-b2d9-47f9-9b92-81bd1639fcc5@162.159.153.2:443?path=%2FTelegram%40proxy_mtm%2F%3Fed%3D2560&security=tls&encryption=none&host=5-55sfjslf.ifenxiang.cfd&fp=random&type=ws&sni=5-55sfjslf.ifenxiang.cfd#[]t.me/ConfigsHub
-Host: 162.159.153.2, Status: FAILED
-Ping log:
-PING 162.159.153.2 (162.159.153.2) 56(84) bytes of data.
-
---- 162.159.153.2 ping statistics ---
-3 packets transmitted, 0 received, 100% packet loss, time 2037ms
-
-
+Node: vless://397f9bb8-9d73-419d-f216-141262ea07de@89.34.230.165:27433?security=reality&sni=rEfErSion.Com&type=tcp&fp=chrome&pbk=rMS-Z-21leNq4TB94xXNrieTjzyoahRB1KHMKMYwUis#4Mohsen-10274
+Host: 89.34.230.165, Port: 27433, Status: FAILED
+TCP log:
+TCP连接失败: [Errno 111] Connection refused
 ========================================
-Node: vless://2c480d4d-17d6-48d8-a1e6-bae137bb45c0@104.20.103.144:2087?security=tls&sni=g4.ferdowsi.shop&type=grpc&serviceName=Telegram:@Cephalon_ALA-Telegram:@Cephalon_ALA-Telegram:@Cephalon_ALA-Telegram:@Cephalon_ALA-Telegram:@Cephalon_ALA-Telegram:@Cephalon_ALA-Telegram:@Cephalon_ALA# VL-GRPC-TLS  NA-104.20.103.144:2087
-Host: 104.20.103.144, Status: FAILED
-Ping log:
-PING 104.20.103.144 (104.20.103.144) 56(84) bytes of data.
-
---- 104.20.103.144 ping statistics ---
-3 packets transmitted, 0 received, 100% packet loss, time 2036ms
-
-
+Node: vless://34842069-dcb9-4595-bd60-20b0562c56e5@108.162.192.217:443?security=tls&sni=gb-3.memories-00.space&type=xhttp&path=/api/v1&fp=chrome&alpn=h3,h2,http/1.1#4Mohsen-10129
+Host: 108.162.192.217, Port: 443, Status: OK
+TCP log:
+TCP连接成功
 ========================================
-Node: vless://1a79d43f-b41c-496b-a241-dcbeefa81f0e@62.72.166.251:8880?sni=Telegram-channel-WangCai2&type=ws&host=0926.qiang2000.link&path=/Telegram&allowInsecure=0#4Kian-8494
-Host: 62.72.166.251, Status: FAILED
-Ping log:
-PING 62.72.166.251 (62.72.166.251) 56(84) bytes of data.
-
---- 62.72.166.251 ping statistics ---
-3 packets transmitted, 0 received, 100% packet loss, time 2036ms
-
-
+Node: vless://0132166f-e702-48ed-a9e7-b07af768faf8@188.42.88.251:8880?allowInsecure=0&sni=Telegram-channel-WangCai2&type=ws&host=cf.d3z.net&path=/Telegram#4Mohsen-7644
+Host: 188.42.88.251, Port: 8880, Status: OK
+TCP log:
+TCP连接成功
 ========================================
-Node: vless://49190b8f-1fce-4885-9141-d778373a241c@www.speedtest.net:80?path=/telegram-@ISVvpn-telegram-@ISVvpn-telegram-@ISVvpn-telegram-@ISVvpn-telegram-@ISVvpn-telegram-@ISVvpn-telegram-@ISVvpn-telegram-@ISVvpn-telegram-@ISVvpn-telegram-@ISVvpn%3Fed%3D2048&security=none&encryption=none&host=www.speedtest.net.19.speedtest3.onlinE.&type=ws#[]t.me/ConfigsHub
-Host: www.speedtest.net, Status: FAILED
-Ping log:
-PING www.speedtest.net.cdn.cloudflare.net (104.17.148.22) 56(84) bytes of data.
-
---- www.speedtest.net.cdn.cloudflare.net ping statistics ---
-3 packets transmitted, 0 received, 100% packet loss, time 2034ms
-
-
+Node: vless://d6beed30-8f99-46ef-a250-3f2c5044840d@ipe.alighan.ir:2083?type=ws&path=%2F%3Fed%3D2048&host=germany.alighan.ir&security=tls&fp=chrome&alpn=http%2F1.1&sni=germany.alighan.ir#[]t.me/ConfigsHub
+Host: ipe.alighan.ir, Port: 2083, Status: FAILED
+TCP log:
+TCP连接失败: timed out
 ========================================
-Node: vless://cba81793-1caa-4558-db14-11532b9e3355@151.101.64.155:80?type=grpc&serviceName=@icv2ray,@icv2ray,@icv2ray,@icv2ray,@icv2ray,@icv2ray,@icv2ray,@icv2ray,@icv2ray,@icv2ray,@icv2ray,@icv2ray&path=%2F%40%58p%6eT%65am/%40%58p%6eT%65am/%40%58p%6eT%65am/%40%58p%6eT%65am/%40%58p%6eT%65am/%40%58p%6eT%65am/%40%58p%6eT%65am/%40%58p%6eT%65am/%40%58p%6eT%65am/%40%58p%6eT%65am/%40%58p%6eT%65am/%40%58p%6eT%65am/%40%58p%6eT%65am/%40%58p%6eT%65am/%40%58p%6eT%65am/%40%58p%6eT%65am%3Fed%3D2048&type=grpc&serviceName=@icv2ray,@icv2ray,@icv2ray,@icv2ray,@icv2ray,@icv2ray,@icv2ray,@icv2ray,@icv2ray,@icv2ray,@icv2ray,@icv2ray&security=none&encryption=none&host=Bpalanenok.ir&type=ws#@Vip_Security join us - 1262
-Host: 151.101.64.155, Status: FAILED
-Ping log:
-PING 151.101.64.155 (151.101.64.155) 56(84) bytes of data.
-
---- 151.101.64.155 ping statistics ---
-3 packets transmitted, 0 received, 100% packet loss, time 2037ms
-
-
+Node: vless://6d91bc33-2d86-4839-9205-02024ff483c7@careers.pypl.com:443?path=%2Fproxyip%3D%23MARAMBASHI_MARAMBASHI%2F%3Fed%3D2560&security=tls&alpn=http%2F1.1&encryption=none&host=wtestfrtt.requesttest.cloudns.org&fp=random&type=ws&sni=wtestfrtt.requesttest.cloudns.org#[]t.me/ConfigsHub
+Host: careers.pypl.com, Port: 443, Status: OK
+TCP log:
+TCP连接成功
 ========================================
-Node: vless://4aefa474-aa2c-46d4-aff1-82fa29dd5c25@v22.vxlimir.com:1370?security=reality&type=tcp&headerType=none&path=&host=&sni=refersion.com&fp=chrome&pbk=_N3KecwB9Ck28IIMxIck00ivkq3_ZEUvU3KXELnfvHw&sid=e1afb93bfe75a34b#@MoftConfigGermanySaarbrcken (Mitte)ping:38.85ms
-Host: v22.vxlimir.com, Status: FAILED
-Ping log:
-PING v22.blkrose.ir (10.10.34.36) 56(84) bytes of data.
-
---- v22.blkrose.ir ping statistics ---
-3 packets transmitted, 0 received, 100% packet loss, time 2066ms
-
-
+Node: vless://31a27ed1-2ec6-4ab5-95b6-3e213e59e0a9@162.159.152.2:2087?path=%2F&security=tls&encryption=none&host=Tp3608Tn93.BaBaUsMaN2.iNfO&type=ws&sni=Tp3608Tn93.BaBaUsMaN2.iNfO#[]t.me/ConfigsHub
+Host: 162.159.152.2, Port: 2087, Status: OK
+TCP log:
+TCP连接成功
 ========================================
-Node: vless://10d9df89-9a20-4110-9711-bca119490ee9@104.16.209.110:443?path=JOKERRVPNJoin_Bade_Channel@JOKERRVPN%2F%3Fed%3D2560&security=tls&encryption=none&host=masaleini.mahsaamini.dpdns.org&fp=random&type=ws&sni=masaleini.mahsaamini.dpdns.org#[]t.me/ConfigsHub
-Host: 104.16.209.110, Status: FAILED
-Ping log:
-PING 104.16.209.110 (104.16.209.110) 56(84) bytes of data.
-
---- 104.16.209.110 ping statistics ---
-3 packets transmitted, 0 received, 100% packet loss, time 2037ms
-
-
+Node: vless://fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf@102.177.189.29:8880?security=none&type=ws&host=hk.laoyoutiao.link&path=%2FTelegramU0001F1E8U0001F1F3# VL-WS-NONE  GB-102.177.189.29:8880
+Host: 102.177.189.29, Port: 8880, Status: OK
+TCP log:
+TCP连接成功
 ========================================
-Node: vless://d431e60a-2a26-46ef-b0a8-644143727c12@137.184.10.72:52605?security=none&encryption=none&headerType=none&type=tcp#[]t.me/ConfigsHub
-Host: 137.184.10.72, Status: FAILED
-Ping log:
-PING 137.184.10.72 (137.184.10.72) 56(84) bytes of data.
-
---- 137.184.10.72 ping statistics ---
-3 packets transmitted, 0 received, 100% packet loss, time 2037ms
-
-
+Node: vless://63601f9f-7c67-4952-919a-1ef802b5a7ec@45.12.134.250:443?sni=steep.skyfigure.top&type=ws&host=steep.skyfigure.top&path=/Telegram&allowInsecure=1#4Mohsen-12965
+Host: 45.12.134.250, Port: 443, Status: OK
+TCP log:
+TCP连接成功
 ========================================
-Node: vless://05519058-d2ac-4f28-9e4a-2b2a1386749e@63.176.33.105:22224?type=ws&security=tls&path=%2Ftelegram-channel-vlessconfig&sni=trojan.burgerip.co.uk#@MoftConfig
-Host: 63.176.33.105, Status: FAILED
-Ping log:
-PING 63.176.33.105 (63.176.33.105) 56(84) bytes of data.
-
---- 63.176.33.105 ping statistics ---
-3 packets transmitted, 0 received, 100% packet loss, time 2037ms
-
-
+Node: vless://80eb30d7-8a2c-41c3-92ff-5b99c912b382@37.27.25.218:443?security=reality&flow=xtls-rprx-vision&sni=jetbrains.com&type=tcp&fp=chrome&pbk=zAldJbjPCDZfKrH8cdqLtrfbos1ZON4uco8UUaMXiX4&sid=d81382c7179c13bf#4Mohsen-14009
+Host: 37.27.25.218, Port: 443, Status: OK
+TCP log:
+TCP连接成功
 ========================================
-Node: vless://48198295-b7ba-4b5c-8d85-085d55a6c869@198.41.208.45:443?security=tls&sni=aw.ylks.xyz&type=ws&path=%2F%3Fed%3D2048# VL-WS-TLS  NA-198.41.208.45:443
-Host: 198.41.208.45, Status: FAILED
-Ping log:
-PING 198.41.208.45 (198.41.208.45) 56(84) bytes of data.
-
---- 198.41.208.45 ping statistics ---
-3 packets transmitted, 0 received, 100% packet loss, time 2037ms
-
-
+Node: vless://70ee2b5e-aee7-4e03-8bea-047536b17f61@tnl39.vipradvin.ir:8220?encryption=none&security=none&type=tcp&headerType=http#VL-VIP-tnl39-1256
+Host: tnl39.vipradvin.ir, Port: 8220, Status: OK
+TCP log:
+TCP连接成功
 ========================================
-Node: vless://24d8bbf1-3aa6-4a81-bd82-205b99aa1899@46.245.64.129:51973?type=tcp&path=%2F&headerType=http&security=none# 209 | Tir-01| MTSRVRS
-Host: 46.245.64.129, Status: FAILED
-Ping log:
-PING 46.245.64.129 (46.245.64.129) 56(84) bytes of data.
-
---- 46.245.64.129 ping statistics ---
-3 packets transmitted, 0 received, 100% packet loss, time 2037ms
-
-
+Node: vless://897a4bec-26b8-11e8-94be-00505695472c@104.16.55.132:443?sni=xv6.jpmj.dpdns.org&type=ws&host=xv6.jpmj.dpdns.org&allowInsecure=1#Join+Telegram:@Farah_VPN
+Host: 104.16.55.132, Port: 443, Status: OK
+TCP log:
+TCP连接成功
 ========================================
-Node: vless://33707040-edcf-4185-94e4-2a071315c602@5.75.192.18:443?security=reality&sni=vpn_proxy_channel_vpn_proxy_channel.hohod.ir&allowInsecure=1&fp=chrome&pbk=GpgfsA-U8Y8M3LRcTfsaBViDtp2VlN5riSLLZ2kxEiQ&sid=7def4dde&type=tcp&packetEncoding=xudp&encryption=none#[]t.me/MoftConfig
-Host: 5.75.192.18, Status: FAILED
-Ping log:
-PING 5.75.192.18 (5.75.192.18) 56(84) bytes of data.
-
---- 5.75.192.18 ping statistics ---
-3 packets transmitted, 0 received, 100% packet loss, time 2036ms
-
-
+Node: vless://a8a424c8-0da6-44ee-ac8f-fa45e17ff2a1@3900230223.torob.com.tr:1522?security=none&type=tcp&headerType=http&path=%2F&host=testspeed-foreign.tci.ir#@MoftConfigFinlandHelsinkiping:14.59ms
+Host: 3900230223.torob.com.tr, Port: 1522, Status: OK
+TCP log:
+TCP连接成功
 ========================================
-Node: vless://4cfed9ee-71db-429b-b18d-f9f3dbd11bad@162.159.195.127:443?security=tls&sni=xxx.66500-280b-471c-b2b8-d68b7f9960007.workers.dev&type=ws&host=xxx.66500-280b-471c-b2b8-d68b7f9960007.workers.dev&path=%2F%3Fed%3D2048&fp=chrome&alpn=h3%2Ch2#4Kian-10326
-Host: 162.159.195.127, Status: FAILED
-Ping log:
-PING 162.159.195.127 (162.159.195.127) 56(84) bytes of data.
-
---- 162.159.195.127 ping statistics ---
-3 packets transmitted, 0 received, 100% packet loss, time 2036ms
-
-
+Node: vless://55520747-311e-4015-83ce-be46e2060ce3@160.79.104.116:443?security=tls&sni=re.vs2024.us.kg&type=ws&path=%2F%3Fed&fp=chrome#Join+Telegram:@Farah_VPN
+Host: 160.79.104.116, Port: 443, Status: OK
+TCP log:
+TCP连接成功
 ========================================
-Node: vless://7b33f59f-aada-4b49-a4ac-1c335977f2af@104.26.4.60:2053?security=tls&sni=vless1-698.pages.dev&type=ws&host=vless1-698.pages.dev&path=%2F%3Fed%3D2560&fp=random#Join+Telegram:@Farah_VPN
-Host: 104.26.4.60, Status: FAILED
-Ping log:
-PING 104.26.4.60 (104.26.4.60) 56(84) bytes of data.
-
---- 104.26.4.60 ping statistics ---
-3 packets transmitted, 0 received, 100% packet loss, time 2037ms
-
-
+Node: vless://5f566fbf-13bc-4312-ae37-ea173c4ef4bb@89.34.230.246:14116?security=none&encryption=none&host=varzesh3.com&headerType=http&type=tcp#@MoftConfigThe NetherlandsAmsterdamping:34.44ms
+Host: 89.34.230.246, Port: 14116, Status: FAILED
+TCP log:
+TCP连接失败: timed out
 ========================================
-Node: vless://d0298536-d670-4045-bbb1-ddd5ea68683e@104.17.128.1:2096?security=tls&sni=azadnet-1ml.pages.dev&type=ws&host=azadnet-1ml.pages.dev&path=%2Fazadnet-1ml.pages.dev%2F%3Fed%3D2560%26PROT_TYPE%3Dvless&fp=randomized#Join+Telegram:@Farah_VPN
-Host: 104.17.128.1, Status: FAILED
-Ping log:
-PING 104.17.128.1 (104.17.128.1) 56(84) bytes of data.
-
---- 104.17.128.1 ping statistics ---
-3 packets transmitted, 0 received, 100% packet loss, time 2037ms
-
-
+Node: vless://53fa8faf-ba4b-4322-9c69-a3e5b1555049@104.21.96.1:443?path=%2FRiuadVWEiFmFyL3C%3Fed%3D2560&security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&host=ipsycho.suex12.ir&fp=randomized&type=ws&sni=iPsyCHO.SUEx12.iR#@MoftConfigCanadaTorontoping:98.03ms
+Host: 104.21.96.1, Port: 443, Status: OK
+TCP log:
+TCP连接成功
 ========================================
-Node: vless://f6bd2c47-99da-4bca-bf70-7186aa9e7e06@104.21.48.1:443?path=%2F3um9NK8jwisKz35E%3Fed%3D%2F%3F%40jokerrvpnJoinBadeChannel%40JOKERRVPN&security=tls&encryption=none&host=karshenashamrah.ir&type=ws&sni=karshenashamrah.ir#[]t.me/MoftConfig
-Host: 104.21.48.1, Status: FAILED
-Ping log:
-PING 104.21.48.1 (104.21.48.1) 56(84) bytes of data.
-
---- 104.21.48.1 ping statistics ---
-3 packets transmitted, 0 received, 100% packet loss, time 2037ms
-
-
+Node: vless://05519058-d2ac-4f28-9e4a-2b2a1386749e@3.77.188.1:22222?path=/telegram-channel-vlessconfig-ws&security=tls&encryption=none&host=telegram-channel-vlessconfig.sohala.uk&type=ws&sni=telegram-channel-vlessconfig.sohala.uk#Telegram @VlessConfig
+Host: 3.77.188.1, Port: 22222, Status: FAILED
+TCP log:
+TCP连接失败: timed out
 ========================================
-Node: vless://53fa8faf-ba4b-4322-9c69-a3e5b1555049@104.17.147.22:80?path=%2FTelegram%40V2ray_Alpha%2F%3Fed%3D2560&security=none&encryption=none&host=redfree8.pooriashop.ir&type=ws#@V2rayNG3
-Host: 104.17.147.22, Status: FAILED
-Ping log:
-PING 104.17.147.22 (104.17.147.22) 56(84) bytes of data.
-
---- 104.17.147.22 ping statistics ---
-3 packets transmitted, 0 received, 100% packet loss, time 2037ms
-
-
+Node: vless://05519058-d2ac-4f28-9e4a-2b2a1386749e@13.36.95.222:22224?type=ws&security=tls&path=%2Ftelegram-channel-vlessconfig&sni=trojan.burgerip.co.uk#@MoftConfig
+Host: 13.36.95.222, Port: 22224, Status: FAILED
+TCP log:
+TCP连接失败: timed out
 ========================================
-Node: vless://47d7d5eb-55e6-4085-a155-bdf3fcc428f6@167.172.203.46:59483?encryption=none&security=auto&type=grpc&serviceName=&flow=&sni=&fp=chrome#[]t.me/ConfigsHub
-Host: 167.172.203.46, Status: FAILED
-Ping log:
-PING 167.172.203.46 (167.172.203.46) 56(84) bytes of data.
-
---- 167.172.203.46 ping statistics ---
-3 packets transmitted, 0 received, 100% packet loss, time 2037ms
-
-
+Node: vless://05519058-d2ac-4f28-9e4a-2b2a1386749e@54.247.168.153:22222?path=/telegram-channel-vlessconfig-ws&security=tls&encryption=none&host=telegram-channel-vlessconfig.sohala.uk&type=ws&sni=telegram-channel-vlessconfig.sohala.uk#Telegram @VlessConfig
+Host: 54.247.168.153, Port: 22222, Status: FAILED
+TCP log:
+TCP连接失败: timed out
 ========================================
-Node: vless://869970fa-fb41-4351-9f6d-b3a092c53b2d@151.101.64.155:80?path=/-LiV2ry@LIGHTNING6-TEL--@LIGHTNING6-TEL--@LIGHTNING6-TEL--@LIGHTNING6-JOIN-@LIGHTNING6-TEL--@LIGHTNING6-JOIN-@LIGHTNING6-TEL-@LIGHTNING6-TEL--@LIGHTNING6-JOIN-@LIGHTNING6-TEL--@LIGHTNING6%3Fed%3D2048&amp;security=none&amp;encryption=none&amp;host=irancell.net.&amp;type=ws#Join+Telegram:@Farah_VPN
-Host: 151.101.64.155, Status: FAILED
-Ping log:
-PING 151.101.64.155 (151.101.64.155) 56(84) bytes of data.
-
---- 151.101.64.155 ping statistics ---
-3 packets transmitted, 0 received, 100% packet loss, time 2037ms
-
-
+Node: vless://96a1b724-68d2-4f4d-ab25-38ecd83577bc@45.131.211.202:8443?encryption=none&security=tls&sni=NuWoLcZn28.qUiCkOrA.OrG&alpn=h2%2Chttp%2F1.1&fp=chrome&type=ws&host=NuWoLcZn28.qUiCkOrA.OrG&path=%2F#[]t.me/ConfigsHub
+Host: 45.131.211.202, Port: 8443, Status: OK
+TCP log:
+TCP连接成功
 ========================================
-Node: vless://54694a33-a8dc-47dd-bc38-acd3971e0055@147.135.4.2:443?security=tls&sni=147135004002.sec20org.com&type=tcp#4Kian-11477
-Host: 147.135.4.2, Status: FAILED
-Ping log:
-PING 147.135.4.2 (147.135.4.2) 56(84) bytes of data.
-
---- 147.135.4.2 ping statistics ---
-3 packets transmitted, 0 received, 100% packet loss, time 2037ms
-
-
+Node: vless://d67107cd-570c-4cd1-9b73-135fb6766f6f@ww.speedmeter.life:80?path=%2F-LiV2ry%40LIGHTNING6-TEL--%40LIGHTNING6-TEL--%40LIGHTNING6-TEL--%40LIGHTNING6-JOIN-%40LIGHTNING6-TEL--%40LIGHTNING6-JOIN-%40LIGHTNING6-TEL-%40LIGHTNING6-TEL--%40LIGHTNING6-JOIN-%40LIGHTNING6-TEL--%40LIGHTNING6%3Fed%3D2048&security=none&encryption=none&host=Www.speedtest.net.sPeedtest2.sbs.&type=ws#[]t.me/MoftConfig
+Host: ww.speedmeter.life, Port: 80, Status: OK
+TCP log:
+TCP连接成功
 ========================================
-Node: vless://8a1b71ff-a775-4412-95fa-e182386b167c@104.21.72.121:443?security=tls&sni=xxx.66500-280b-471c-b2b8-d68b7f9960004.workers.dev&type=ws&host=xxx.66500-280b-471c-b2b8-d68b7f9960004.workers.dev&path=%2F%3Fed%3D2048&fp=chrome&alpn=h3%2Ch2#Join+Telegram:@Farah_VPN
-Host: 104.21.72.121, Status: FAILED
-Ping log:
-PING 104.21.72.121 (104.21.72.121) 56(84) bytes of data.
-
---- 104.21.72.121 ping statistics ---
-3 packets transmitted, 0 received, 100% packet loss, time 2037ms
-
-
+Node: vless://15f858a5-3b51-4fe1-a66b-39871f86cc3f@23.88.62.209:2089?encryption=none&security=reality&sni=refersion.com&fp=chrome&pbk=bvEBes1y2n6327dEgJyZTR6Xz_EuyfLdkEX7DxWGFFg&sid=e3c5c005cae07eb8&spx=%2FJOIN_BEDE_CHANEL%40MARAMBASHI&type=tcp&headerType=none#@MoftConfigGermanyNurembergping:34.45ms
+Host: 23.88.62.209, Port: 2089, Status: FAILED
+TCP log:
+TCP连接失败: timed out
 ========================================
-Node: vless://a13df940-020c-465f-bc89-ee5279b5cd6a@188.114.96.6:443?security=tls&sni=ln.ylks01.eu.org&type=ws&host=ln.ylks01.eu.org&path=%2Fblue# VL-WS-TLS  NA-188.114.96.6:443
-Host: 188.114.96.6, Status: FAILED
-Ping log:
-PING 188.114.96.6 (188.114.96.6) 56(84) bytes of data.
-
---- 188.114.96.6 ping statistics ---
-3 packets transmitted, 0 received, 100% packet loss, time 2037ms
-
-
+Node: vless://6803d696-9541-4bab-8c90-e7f634513ec4@188.245.118.6:5643?security=reality&sni=refersion.com&type=grpc&serviceName=mgrpcm&fp=chrome&pbk=2I22pKooT9m0Zm8Y9ZZnQPWAwZV6kZ5EmrNKwaoOz2I&sid=68e1d9a8a75a3fea# VL-GRPC-RLT  DE-188.245.118.6:5643
+Host: 188.245.118.6, Port: 5643, Status: FAILED
+TCP log:
+TCP连接失败: timed out
 ========================================
-Node: vless://638087ad-7f60-4fb3-ab3e-f3a5001d55db@54.200.104.95:443?security=reality&encryption=none&pbk=DZSVFnQWUiVvpEtdgXvPSAlC5ZsEhbvum3Bop_TPhjg&headerType=none&fp=chrome&spx=%2F&type=tcp&flow=xtls-rprx-vision&sni=zula.ir&sid=e395e6bd#[]t.me/MoftConfig
-Host: 54.200.104.95, Status: FAILED
-Ping log:
-PING 54.200.104.95 (54.200.104.95) 56(84) bytes of data.
-
---- 54.200.104.95 ping statistics ---
-3 packets transmitted, 0 received, 100% packet loss, time 2037ms
-
-
-========================================
-Node: vless://05519058-d2ac-4f28-9e4a-2b2a1386749e@13.36.101.183:22224?type=ws&security=tls&path=%2Ftelegram-channel-vlessconfig&sni=trojan.burgerip.co.uk# 636 | Tir-01| MTSRVRS
-Host: 13.36.101.183, Status: FAILED
-Ping log:
-PING 13.36.101.183 (13.36.101.183) 56(84) bytes of data.
-
---- 13.36.101.183 ping statistics ---
-3 packets transmitted, 0 received, 100% packet loss, time 2037ms
-
-
-========================================
-Node: vless://82bc4728-fac4-4b68-ac99-0335c0e48ca0@p5.punchline.ir:15844?mode=auto&path=%2Fv2raybluecrystal&security=reality&encryption=none&pbk=YDC-dhEfJzgMPt87r21AJX2axZzlPzR5CB33V0XBRxU&fp=chrome&spx=%2F&type=xhttp&sni=www.microsoft.com&sid=5aaf9a1f2a#@MoftConfigThe NetherlandsAmsterdamping:53.54ms
-Host: p5.punchline.ir, Status: FAILED
-Ping log:
-PING p5.punchline.ir (10.10.34.36) 56(84) bytes of data.
-
---- p5.punchline.ir ping statistics ---
-3 packets transmitted, 0 received, 100% packet loss, time 2031ms
-
-
+Node: vless://6603a779-07c9-4bc9-8f61-4a09c238653a@62.60.193.221:32774?security=none&type=ws&path=%2F6603a779#[]t.me/ConfigsHub
+Host: 62.60.193.221, Port: 32774, Status: FAILED
+TCP log:
+TCP连接失败: timed out
 ========================================
