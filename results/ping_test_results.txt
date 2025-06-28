@@ -1,242 +1,237 @@
-TCP Connect Test Results - 2025-06-27 01:22:58
+TCP Connect Test Results - 2025-06-28 01:20:12
 ==================================================
-Node: vless://b30743e3-6d1a-4854-a3a0-a5769b64e3ad@104.26.14.85:8080?type=ws&host=qw.vU6d72nt9y.zULaIR.ORg.#[]t.me/MoftConfig
-Host: 104.26.14.85, Port: 8080, Status: OK
+Node: vless://96a1b724-68d2-4f4d-ab25-38ecd83577bc@45.131.208.128:2096?security=tls&sni=LhCgBjGr29.vElTrIxS.OrG&type=ws&host=LhCgBjGr29.vElTrIxS.OrG&path=%2F&fp=chrome&alpn=h3%2Ch2#Join+Telegram:@Farah_VPN
+Host: 45.131.208.128, Port: 2096, Status: OK
 TCP log:
 TCP连接成功
 ========================================
-Node: vless://65f3443e-4056-4b51-8203-efd6a33aeafa@141.101.121.206:443?sni=waphk.xiaosiyue.dpdns.org&type=ws&host=waphk.xiaosiyue.dpdns.org&allowInsecure=0#4Mohsen-11793
-Host: 141.101.121.206, Port: 443, Status: OK
+Node: vless://a13df940-020c-465f-bc89-ee5279b5cd6a@188.114.97.64:443?security=tls&sni=cg.ylks.xyz&type=ws&host=cg.ylks.xyz&path=%2Fblue# VL-WS-TLS  NA-188.114.97.64:443
+Host: 188.114.97.64, Port: 443, Status: OK
 TCP log:
 TCP连接成功
 ========================================
-Node: vless://59860b15-b2d9-47f9-9b92-81bd1639fcc5@172.67.75.52:443?encryption=none&amp;security=tls&amp;sni=5-55sfjslf.ifenxiang.cfd&amp;fp=randomized&amp;type=ws&amp;host=5-55sfjslf.ifenxiang.cfd&amp;path=%2FJOKERRVPNTELEGRAM----%40JOKERRVPN----%40JOKERRVPN----%40JOKERRVPN----%40JOKERRVPN----%40JOKERRVPN----%40JOKERRVPN----%40JOKERRVPN----%40JOKERRVPN----%40JOKERRVPN----%40JOKERRVPN----%40JOKERRVPN#%40awlix_ir
-Host: 172.67.75.52, Port: 443, Status: OK
+Node: vless://0132166f-e702-48ed-a9e7-b07af768faf8@46.254.93.251:8880?sni=Telegram-channel-WangCai2&type=ws&host=cf.d3z.net&path=/Telegram&allowInsecure=0#4Mohsen-7107
+Host: 46.254.93.251, Port: 8880, Status: OK
 TCP log:
 TCP连接成功
 ========================================
-Node: vless://0644ddf4-92ed-4159-a47d-a3dc96ae0a9e@whatismyipaddress.com:2096?encryption=none&security=tls&sni=wwwspeedtestnetwhiteberinsistomd6625996s27.elitemizban.ir&type=ws&host=wwwspeedtestnetwhiteberinsistomd6625996s27.elitemizban.ir&path=%2F# @MoftConfigCanada
-Host: whatismyipaddress.com, Port: 2096, Status: OK
+Node: vless://5128b2cc-309a-4b3d-9327-6beb2f287463@104.25.31.0:443?security=tls&sni=bbc-4du.pages.dev&type=ws&host=bbc-4du.pages.dev&fp=randomized#Join+Telegram:@Farah_VPN
+Host: 104.25.31.0, Port: 443, Status: OK
 TCP log:
 TCP连接成功
 ========================================
-Node: vless://89b3cbba-e6ac-485a-9481-976a0415eab9@188.114.96.3:443?encryption=none&security=tls&sni=PpAL03.mr-KOBy-gRAhAM.WorKeRS.dev&alpn=h2%2Chttp%2F1.1&fp=randomized&type=ws&headertype=none&host=PPAL03.MR-kOBy-GRaHam.WorkErS.deV&path=%2FAamoZBGqoptwavQ2%3Fed%3D2560#[]t.me/ConfigsHub
-Host: 188.114.96.3, Port: 443, Status: OK
+Node: vless://fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf@141.193.213.172:80?path=Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2%2F%3Fed%3D2560&security=none&encryption=none&host=cs.laoyoutiao.link&type=ws&sni=cs.laoyoutiao.link#@MoftConfigUnited StatesAustin (Downtown Austin)ping:9.14ms
+Host: 141.193.213.172, Port: 80, Status: OK
 TCP log:
 TCP连接成功
 ========================================
-Node: vless://0a44145f-59dc-4e5b-a233-677b97f5114c@135.148.97.101:443?security=tls&sni=147135011033.sec21org.com&type=tcp#4Mohsen-7442
-Host: 135.148.97.101, Port: 443, Status: OK
+Node: vless://9f0eae34-97c1-4c07-8a55-438379981334@104.16.86.2:80?security=none&type=ws&host=snowy-bush-4df8-ppal03.toxebex651.workers.dev&path=%2F%3Fed%3D2560# VL-WS-NONE  NA-104.16.86.2:80
+Host: 104.16.86.2, Port: 80, Status: OK
 TCP log:
 TCP连接成功
 ========================================
-Node: vless://df0680ca-e43c-498d-ed86-8e196eedd012@45.159.248.125:8880?type=grpc&mode=gun&authority=/@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn#@MoftConfigUnited KingdomNew Barnetping:64.45ms
-Host: 45.159.248.125, Port: 8880, Status: OK
+Node: vless://4a617961-06bb-405d-b1d8-28abaaaf18e7@157.173.127.235:443?security=reality&encryption=none&pbk=k9oHeYY0hNmcd6BRZQTX9sp0ZQR7Bx85fPMu0v4uvwc&headerType=none&fp=chrome&type=tcp&sni=analytics.google.com&sid=c5a5eca0d8234375#@MoftConfigGermanyDsseldorfping:102.52ms
+Host: 157.173.127.235, Port: 443, Status: OK
 TCP log:
 TCP连接成功
 ========================================
-Node: vless://bbd2882a-c158-4ae6-b53a-5ae6be8dbcb0@104.16.0.113:80?path=%2F%3Fed%3D2560&security=none&encryption=none&host=barayeiran.nastaranh.dpdns.org&fp=random&type=ws&sni=barayeiran.nastaranh.dpdns.org#[]t.me/MoftConfig
-Host: 104.16.0.113, Port: 80, Status: OK
+Node: vless://a0d4e899-56f7-4fd0-ae9e-81f0f2d1bbba@94.182.105.49:39923?security=none&type=tcp&headerType=http# VL-TCP-NONE  IR-94.182.105.49:39923
+Host: 94.182.105.49, Port: 39923, Status: OK
 TCP log:
 TCP连接成功
 ========================================
-Node: vless://f184c89c-80a4-4a3a-bc67-97db43266c11@5.230.44.117:16771?security=tls&sni=vdd.wxgqlfx.cn&type=ws&host=vdd.wxgqlfx.cn&path=%2FTG%40wxgqlfx%3Fed%3D2560&fp=random&alpn=http%2F1.1#Join+Telegram:@Farah_VPN
-Host: 5.230.44.117, Port: 16771, Status: OK
+Node: vless://4e8be969-b430-4745-969d-6c759c5fe490@s26.radnikmax.ir:8452?encryption=none&security=none&type=tcp&headerType=http#VL-VIP-s26-76
+Host: s26.radnikmax.ir, Port: 8452, Status: OK
 TCP log:
 TCP连接成功
 ========================================
-Node: vless://2d96c29e-4974-4bbb-a0f2-33e5c912458e@45.15.170.53:2443?security=reality&sni=api.snapkit.com&type=tcp&fp=chrome&pbk=QgyNvrlHczufNmykfEZlNojkJNtz_BSc8JCVGZlpdT0&sid=c104a7dd# VL-TCP-RLT  AL-45.15.170.53:2443
-Host: 45.15.170.53, Port: 2443, Status: OK
+Node: vless://a1a91bdc-6a37-467b-acdf-d972902ba786@tnl15.radnikmax.ir:8098?encryption=none&security=none&type=tcp&headerType=http#VL-VIP-tnl15-761
+Host: tnl15.radnikmax.ir, Port: 8098, Status: OK
 TCP log:
 TCP连接成功
 ========================================
-Node: vless://53fa8faf-ba4b-4322-9c69-a3e5b1555049@45.8.211.220:80?path=Telegram%3A%40vpnAndroid2%2F%3Fed%3D2560&security=none&encryption=none&host=reedfree8mahsang2.redorg.ir&type=ws#[]t.me/MoftConfig
+Node: vless://36b98d0b-958d-4d4a-c1b7-aaf1a7fa756a@137.131.10.83:25073?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.speedtest.net&fp=chrome&pbk=cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA&type=tcp&headerType=none#[]t.me/MoftConfig
+Host: 137.131.10.83, Port: 25073, Status: FAILED
+TCP log:
+TCP连接失败: timed out
+========================================
+Node: vless://a4e4add6-468d-4aec-bc46-8ba137a599e6@104.17.148.22:2082?security=none&type=ws&host=novinsoft.ir.oradoshop.com.persiangsm.ir.digikala.com.abadis.ir.shad.ir.divar.ir.downloadly.com.aparat.com.cafebazar.ir.varzesh3.com.ninisite.com.abadis.ir.bama.ir.p30download.ir.telewebion.bmi.ir.shad.ir.mayket.com.ninisite.top.&path=%2F%40spikevpn-%40spikevpn-%40spikevpn-%40spikevpn-%40spikevpn-%40spikevpn%3Fed%3D2082#[]t.me/ConfigsHub
+Host: 104.17.148.22, Port: 2082, Status: OK
+TCP log:
+TCP连接成功
+========================================
+Node: vless://e7639e42-17b3-4b1f-e61d-133273faf2bf@95.211.62.200:80?security=tls&flow=-udp443&sni=refersion.com&fp=chrome#[]t.me/ConfigsHub
+Host: 95.211.62.200, Port: 80, Status: FAILED
+TCP log:
+TCP连接失败: timed out
+========================================
+Node: vless://dfc1a9ab-6241-4b73-92f7-b299fc6b7751@104.17.148.22:2052?path=%2FTelegram%40wedbaz---------WedBaZ%2F%3Fed%3D2560&security=&encryption=none&host=Yak-Khanda-kUn-eY-gUL.biNG.com.xn--cR8HaaaAaAAAaAaaAaAaAAaAAaaaAAAAAaAaaAaaaAaaaaAAaaAAAaaaaAa.xN--Cr8hAaAaaAaaAAAAAAaaaAAAaAAaaAaAaAAAAAA.TREPAspeEdTEsT.NEtrag.cOm.PX.Com.sh017.IR.XN--Cr8hAaaAaaAaaAaaaAAAaaaAaaAaaaAaAAAaaaA.yek.dDnS-ip.nEt&type=ws#@MoftConfigCanadaTorontoping:52.87ms
+Host: 104.17.148.22, Port: 2052, Status: OK
+TCP log:
+TCP连接成功
+========================================
+Node: vless://53fa8faf-ba4b-4322-9c69-a3e5b1555049@45.8.211.220:80?path=Telegram%3A%40V2rayngv16%2F%3Fed%3D2560&security=none&encryption=none&host=reedfree8mahsang2.redorg.ir&type=ws#@MoftConfigSingaporeSingaporeping:8.44ms
 Host: 45.8.211.220, Port: 80, Status: OK
 TCP log:
 TCP连接成功
 ========================================
-Node: vless://c84cdf98-f0cc-4bcd-8aa8-b7adb0a25d38@join.unlimiteddev.fastly80-3.hosting-ip.com:80?type=xhttp&mode=auto&host=joinbede_unlimiteddev.ir&path=/@UnlimitedDev----@UnlimitedDev-----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev?ed%3D2480&security=none#[]t.me/MoftConfig
-Host: join.unlimiteddev.fastly80-3.hosting-ip.com, Port: 80, Status: OK
+Node: vless://97d13942-28f3-42bf-827a-fe540f7d99c0@104.17.21.157:8080?path=%2F%40MaSTeRSeRVeR1-%40-MaSTeRSeRVeR1%40MaSTeRSeRVeR1-%40MaSTeRSeRVeR1-%40MaSTeRSeRVeR1-%40MaSTeRSeRVeR1%3Fed%3D2048&security=&encryption=none&host=selllv2rayng.nanvrfood.ir.&type=httpupgrade#@MoftConfigCanadaTorontoping:8.03ms
+Host: 104.17.21.157, Port: 8080, Status: OK
 TCP log:
 TCP连接成功
 ========================================
-Node: vless://26bc13af-e442-4956-afd4-b8f85744d26f@172.66.138.81:80?path=Telegram%40V2ray_Alpha%2F%3Fed%3D2560&security=none&encryption=none&host=fggerlad.gerald81.dpdns.org&fp=chrome&type=ws&sni=fggerlad.gerald81.dpdns.org#[]t.me/ConfigsHub
-Host: 172.66.138.81, Port: 80, Status: OK
+Node: vless://49ed01ad-3bb4-204f-b0ff-a58f658fd618@5.181.171.10:443?security=tls&flow=xtls-rprx-vision-udp443&sni=speed.cloudflare.com&fp=chrome# VL-TCP-TLS  RU-5.181.171.10:443
+Host: 5.181.171.10, Port: 443, Status: OK
 TCP log:
 TCP连接成功
 ========================================
-Node: vless://b6f52521-c65d-43d6-bca4-76790c68d6fd@104.18.9.150:443?security=tls&sni=xxx.66500-280b-471c-b2b8-d68b7f9960012.workers.dev&type=ws&host=xxx.66500-280b-471c-b2b8-d68b7f9960012.workers.dev&path=%2F%3Fed%3D2048&fp=chrome&alpn=h3%2Ch2# VL-WS-TLS  NA-104.18.9.150:443
-Host: 104.18.9.150, Port: 443, Status: OK
+Node: vless://293dbd19-eaec-43f0-dcde-2944af021dd4@103.160.204.105:8880?security=none&type=httpupgrade&host=S130.DdigicYber.clicK.&path=%2Ftelegram-NUFiLTER%2Ctelegram-NUFiLTER%2Ctelegram-NUFiLTER%2Ctelegram-NUFiLTER%2Ctelegram-NUFiLTER%2Ctelegram-NUFiLTER%2Ctelegram-NUFiLTER%2Ctelegram-NUFiLTER%3Fed%3D1024#4Mohsen-8489
+Host: 103.160.204.105, Port: 8880, Status: OK
 TCP log:
 TCP连接成功
 ========================================
-Node: vless://53fa8faf-ba4b-4322-9c69-a3e5b1555049@join.e-l-i-v-2-r-a-y.fastly80-3.hosting-ip.com:80?encryption=none&security=none&type=ws&host=Join--E-L-i-V-2-R-A-Y.net&path=%2F#[]t.me/MoftConfig
-Host: join.e-l-i-v-2-r-a-y.fastly80-3.hosting-ip.com, Port: 80, Status: OK
+Node: vless://df0680ca-e43c-498d-ed86-8e196eedd012@95.164.45.78:8880?mode=gun&security=&encryption=none&type=grpc#[]t.me/ConfigsHub
+Host: 95.164.45.78, Port: 8880, Status: OK
 TCP log:
 TCP连接成功
 ========================================
-Node: vless://d7f943df-d885-4589-93e6-da8b1b2bbde2@104.16.193.4:8443?security=tls&sni=hi.univermap.site&type=ws&host=hi.univermap.site&path=%2F%3Fed%3D2560&fp=random#Join+Telegram:@Farah_VPN
-Host: 104.16.193.4, Port: 8443, Status: OK
+Node: vless://7acf3d74-052a-416c-a0ff-eaeaa642847c@85.9.123.170:2086?security=none&type=tcp#4Mohsen-12808
+Host: 85.9.123.170, Port: 2086, Status: OK
 TCP log:
 TCP连接成功
 ========================================
-Node: vless://c7462764-bc7e-4a36-af7c-d4c5b314bc4e@www.speedtest.net:80?path=%2F-LiV2ry%40LIGHTNING6-TEL--%40LIGHTNING6-TEL--%40LIGHTNING6-TEL--%40LIGHTNING6-JOIN-%40LIGHTNING6-TEL--%40LIGHTNING6-JOIN-%40LIGHTNING6-TEL-%40LIGHTNING6-TEL--%40LIGHTNING6-JOIN-%40LIGHTNING6-TEL--%40LIGHTNING6%3Fed%3D2048&security=none&encryption=none&host=Www.speedtest.net.sPeedtest2.sbs.&type=ws#[]t.me/MoftConfig
+Node: vless://67f2b12f-efd3-44a9-9d9f-cb4d354b71cf@cloud.configforvpn.fun:2087?mode=gun&security=tls&encryption=none&fp=chrome&type=grpc&serviceName=@configforVPN&sni=cloud.configforvpn.fun#@Vip_Security join us - 653
+Host: cloud.configforvpn.fun, Port: 2087, Status: FAILED
+TCP log:
+TCP连接失败: [Errno -2] Name or service not known
+========================================
+Node: vless://ca9ac6fc-7269-42c9-8e48-18d8f0449750@mx.panelmarzban.com:3046?security=reality&encryption=none&pbk=21V_VkMUD2XRbyRDg7hjpblUAwxHvlLmbarATdhhJQI&headerType=none&fp=chrome&type=tcp&sni=refersion.com# @MoftConfigMexico
+Host: mx.panelmarzban.com, Port: 3046, Status: FAILED
+TCP log:
+TCP连接失败: timed out
+========================================
+Node: vless://897a4bec-26b8-11e8-94be-00505695472c@172.64.159.123:443?sni=xv6.jpmj.dpdns.org&type=ws&host=xv6.jpmj.dpdns.org&allowInsecure=1# VL-WS-NA  NA-172.64.159.123:443
+Host: 172.64.159.123, Port: 443, Status: OK
+TCP log:
+TCP连接成功
+========================================
+Node: vless://d77906a1-59fd-4222-ba9e-3de834bb33e2@104.21.59.168:443?security=tls&sni=vpn442telegram.wucwej.workers.Dev&type=ws&host=vpn442telegram.wucwej.workers.Dev&path=%2FTelegram%40mtmvpn%2F%3Fed%3D2048&fp=randomized# VL-WS-TLS  NA-104.21.59.168:443
+Host: 104.21.59.168, Port: 443, Status: OK
+TCP log:
+TCP连接成功
+========================================
+Node: vless://54ec7eb1-a8b5-4d0c-ab87-2c9be758ea57@hajlab.ucdavis.edu:80?path=%2F%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy%3Fed%3D2048&security=none&encryption=none&host=joinshhproxybedeeeeeee.ir&type=ws#[]t.me/ConfigsHub
+Host: hajlab.ucdavis.edu, Port: 80, Status: OK
+TCP log:
+TCP连接成功
+========================================
+Node: vless://568279ce-dd78-4f33-9e5c-64b18c5505db@151.101.123.159:80?security=&amp;type=ws&amp;path=/olem/ws?ed%3D2560&amp;host=foffmelo.com&amp;encryption=none#Join+Telegram:@Farah_VPN
+Host: 151.101.123.159, Port: 80, Status: OK
+TCP log:
+TCP连接成功
+========================================
+Node: vless://b28d4b3f-ea20-408a-a02e-8921c778b356@www.speedtest.net:80?security=&type=ws&path=/@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy?ed%3D2048&host=Www.speedtest.net.developsp.ir.&encryption=none#[]t.me/ConfigsHub
 Host: www.speedtest.net, Port: 80, Status: OK
 TCP log:
 TCP连接成功
 ========================================
-Node: vless://568279ce-dd78-4f33-9e5c-64b18c5505db@151.101.123.248:80?security=none&type=ws&host=foffmelo.com&path=%2Folem%2Fws%3Fed%3D2560#4Mohsen-11307
-Host: 151.101.123.248, Port: 80, Status: OK
+Node: vless://2928d83a-ca75-4d52-b437-fa78c7601378@108.162.195.154:443?security=tls&sni=freedom-1rj.pages.dev&type=ws&host=freedom-1rj.pages.dev&path=%2Ffreedom-1rj.pages.dev%2F%3Fed%3D2560# VL-WS-TLS  NA-108.162.195.154:443
+Host: 108.162.195.154, Port: 443, Status: OK
 TCP log:
 TCP连接成功
 ========================================
-Node: vless://7c9e3c1d-a360-4429-9189-e45a98de7fde@185.193.30.172:443?path=%2FTelegram%40V2ray_Alpha%2F%3Fed%3D2560&security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&host=powerpow.wfft.ir&fp=chrome&type=ws&sni=powerpow.wfft.ir#[]t.me/ConfigsHub
-Host: 185.193.30.172, Port: 443, Status: OK
+Node: vless://636b1684-b26c-4a9c-bc6e-8e1197a36d74@172.67.161.1:8080?security=none&type=ws&host=workerr.hashdiler.workers.dev&path=%2F%3Fed%3D2048# VL-WS-NONE  NA-172.67.161.1:8080
+Host: 172.67.161.1, Port: 8080, Status: OK
 TCP log:
 TCP连接成功
 ========================================
-Node: vless://c5293efa-28f8-4a0f-8f34-541078970cee@188.114.96.3:8443?path=%2FHl5ZA0QBitIoHN9C%3Fed%3D2560&security=tls&encryption=none&alpn=h2,http/1.1&host=gozargah.validbv7996.ir&fp=randomized&type=ws&sni=GOzaRGAh.vALidBv7996.Ir#[]t.me/ConfigsHub
-Host: 188.114.96.3, Port: 8443, Status: OK
+Node: vless://3fefc100-faed-43ad-b087-d47ddfe75121@172.67.147.162:443?security=tls&sni=s92qb78mnok7yh5ykir1ayugvc49aqclfapp4qmqvixdxyd8crqppthcfpsjmm2.esmpy.workers.Dev&type=ws&host=s92qb78mnok7yh5ykir1ayugvc49aqclfapp4qmqvixdxyd8crqppthcfpsjmm2.esmpy.workers.Dev&path=%2FPath%2FTelegram%40proxy_mtm%2F%3Fed%3D2048# VL-WS-TLS  NA-172.67.147.162:443
+Host: 172.67.147.162, Port: 443, Status: OK
 TCP log:
 TCP连接成功
 ========================================
-Node: vless://4f8b6d2a-daa9-4b87-87ee-7f058fce85c1@104.25.167.242:443?security=tls&sni=xxx.66500-280b-471c-b2b8-d68b7f9960006.workers.dev&type=ws&host=xxx.66500-280b-471c-b2b8-d68b7f9960006.workers.dev&path=%2F%3Fed%3D2048&fp=chrome&alpn=h3%2Ch2#4Mohsen-10019
-Host: 104.25.167.242, Port: 443, Status: OK
+Node: vless://7438db48-7fc0-479f-a93d-f3634d219279@45.67.215.43:2096?security=tls&sni=J0in-te1egram-EiiiM.danesh-bonyan.Store&type=ws&host=eiiim.danesh-bonyan.Store&path=join.----------------Telegram-EiiiM----------------Telegram-EiiiM---------------.Telegram-EiiiM.# VL-WS-TLS  RU-45.67.215.43:2096
+Host: 45.67.215.43, Port: 2096, Status: OK
 TCP log:
 TCP连接成功
 ========================================
-Node: vless://1ab04aae-10c8-4cd0-9354-8bc5bde21400@s1.vact.ir:443?mode=gun&security=reality&encryption=none&pbk=32v2F8Ymo35CC3Q9D-T0uUMCoz-bvtvl5aMYQ-kvCV8&fp=chrome&spx=%2F&type=grpc&serviceName=Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray&sni=www.cdn77.com&sid=33a68471e114bb72#[]t.me/MoftConfig
-Host: s1.vact.ir, Port: 443, Status: FAILED
-TCP log:
-TCP连接失败: [Errno -2] Name or service not known
-========================================
-Node: vless://568279ce-dd78-4f33-9e5c-64b18c5505db@151.101.194.219:80?type=ws&host=foffmelo.com&path=%2Folem%2Fws%3Fed%3D1024#[]t.me/MoftConfig
-Host: 151.101.194.219, Port: 80, Status: OK
+Node: vless://838f5273-5d2d-4630-a0f5-9cc8e4aef4d6@45.131.6.160:443?security=tls&sni=CxNiMjJz.cAfUnEaR.InFo&type=ws&host=CxNiMjJz.cAfUnEaR.InFo&path=%2F&fp=chrome#Join+Telegram:@Farah_VPN
+Host: 45.131.6.160, Port: 443, Status: OK
 TCP log:
 TCP连接成功
 ========================================
-Node: vless://4e4768df-0fbb-4cc1-8fd3-7c6fea95742a@104.25.28.103:443?security=tls&sni=rayan-09.parastoo.dpdns.org&type=ws&host=rayan-09.parastoo.dpdns.org&path=%2F%40Rayan_Config&fp=chrome#Join+Telegram:@Farah_VPN
-Host: 104.25.28.103, Port: 443, Status: OK
+Node: vless://05519058-d2ac-4f28-9e4a-2b2a1386749e@3.127.50.217:22222?path=/telegram-channel-vlessconfig-ws&security=tls&encryption=none&host=telegram-channel-vlessconfig.sohala.uk&type=ws&sni=telegram-channel-vlessconfig.sohala.uk#Telegram:@IP_CF
+Host: 3.127.50.217, Port: 22222, Status: FAILED
 TCP log:
-TCP连接成功
+TCP连接失败: timed out
 ========================================
-Node: vless://897a4bec-26b8-11e8-94be-00505695472c@104.16.52.150:443?sni=xv6.jpmj.dpdns.org&type=ws&host=xv6.jpmj.dpdns.org&allowInsecure=1#[]t.me/ConfigsHub
-Host: 104.16.52.150, Port: 443, Status: OK
-TCP log:
-TCP连接成功
-========================================
-Node: vless://0868d2e0-7ea0-4652-9d69-e1f4b8fa87f0@join.VPNCUSTOMIZE.fast.hosting-ip.com:80?type=ws&host=Channel-VPNCUSTOMIZE.ir&path=/TelegramVPNCUSTOMIZE?ed=2048#@MoftConfigUnited StatesSan Franciscoping:7.53ms
-Host: join.VPNCUSTOMIZE.fast.hosting-ip.com, Port: 80, Status: OK
-TCP log:
-TCP连接成功
-========================================
-Node: vless://b99590df-eda0-4e34-e1a9-3d1118faed83@5.10.246.128:8880?security=none&type=httpupgrade&host=nufillter.jtip.sbs.&path=/#4Mohsen-16563
-Host: 5.10.246.128, Port: 8880, Status: OK
-TCP log:
-TCP连接成功
-========================================
-Node: vless://b99590df-eda0-4e34-e1a9-3d1118faed83@160.153.0.84:8880?security=none&type=httpupgrade&host=nufillter.jtip.sbs.&path=%2F# VL-HTTPUPGRADE-NONE  US-160.153.0.84:8880
-Host: 160.153.0.84, Port: 8880, Status: OK
-TCP log:
-TCP连接成功
-========================================
-Node: vless://897a4bec-26b8-11e8-94be-00505695472c@104.21.31.253:443?sni=xv6.jpmj.dpdns.org&type=ws&host=xv6.jpmj.dpdns.org&allowInsecure=1#4Mohsen-13516
-Host: 104.21.31.253, Port: 443, Status: OK
-TCP log:
-TCP连接成功
-========================================
-Node: vless://794f9f41-92c9-4a78-8ffc-1f82cb48a4e2@162.159.153.72:443?sni=0229.patterdeng.pp.ua&type=ws&host=0229.patterdeng.pp.ua&allowInsecure=0#[]t.me/ConfigsHub
-Host: 162.159.153.72, Port: 443, Status: OK
-TCP log:
-TCP连接成功
-========================================
-Node: vless://897a4bec-26b8-11e8-94be-00505695472c@104.17.22.95:443?sni=xv6.jpmj.dpdns.org&type=ws&host=xv6.jpmj.dpdns.org&allowInsecure=1# VL-WS-NA  NA-104.17.22.95:443
-Host: 104.17.22.95, Port: 443, Status: OK
-TCP log:
-TCP连接成功
-========================================
-Node: vless://2567fd40-d432-4ca0-a785-6b10af8e5269@151.234.162.61:701?security=none&type=tcp&host=rubika.ir%2C%20igap.net%2C%20splus.ir%2C%20skyroom.online&headerType=http#4Mohsen-8176
-Host: 151.234.162.61, Port: 701, Status: OK
-TCP log:
-TCP连接成功
-========================================
-Node: vless://a5053089-8d6e-0ef9-8d09-aebb94f33aff@146.19.143.150:5234?security=reality&encryption=none&pbk=1juiWgfU1-cGsbu9zxKCly7Vn3WGES5x6S86r90_vwc&host=%2FTELEGRAM----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN&headerType=none&fp=chrome&spx=%2FCopy-az-chahnnel-JOKERRVPN&type=tcp&flow=xtls-rprx-vision&sni=yandex.com&sid=b7e284c9b786f709#[]t.me/ConfigsHub
-Host: 146.19.143.150, Port: 5234, Status: OK
-TCP log:
-TCP连接成功
-========================================
-Node: vless://10b59513-ef76-4494-a925-305ec45dd3a4@83.147.252.63:2040?security=reality&sni=fr.ign.com&type=tcp&fp=chrome&pbk=iPjWLvXWt7ABJaSRRwzjgLrvlJlwoYQZN8zF-G3D-Qs&sid=27cfa05000c23cc4#Join+Telegram:@Farah_VPN
-Host: 83.147.252.63, Port: 2040, Status: OK
-TCP log:
-TCP连接成功
-========================================
-Node: vless://9fdc6f83-bfbd-40dd-8e4e-1678ee20351c@162.159.44.33:80?security=tls&sni=fari24.clodmolt3.com&type=ws&host=fari24.clodmolt3.com&path=%2Fwss&fp=chrome&alpn=h3%2Ch2%2Chttp%2F1.1# VL-WS-TLS  NA-162.159.44.33:80
-Host: 162.159.44.33, Port: 80, Status: OK
-TCP log:
-TCP连接成功
-========================================
-Node: vless://05519058-d2ac-4f28-9e4a-2b2a1386749e@52.47.65.245:22222?path=/telegram-channel-vlessconfig-ws&security=tls&encryption=none&host=telegram-channel-vlessconfig.sohala.uk&type=ws&sni=telegram-channel-vlessconfig.sohala.uk# @MoftConfigFrance
-Host: 52.47.65.245, Port: 22222, Status: FAILED
+Node: vless://a93bf8ef-0b48-4c49-95ff-03d20d211025@flv4-vip.digitalldns.com:6587?security=none&encryption=none&host=www.speedtest.net&headerType=http&type=tcp#[]t.me/ConfigsHub
+Host: flv4-vip.digitalldns.com, Port: 6587, Status: FAILED
 TCP log:
 TCP连接失败: [Errno 111] Connection refused
 ========================================
-Node: vless://897a4bec-26b8-11e8-94be-00505695472c@104.16.99.152:443?sni=xv6.jpmj.dpdns.org&type=ws&host=xv6.jpmj.dpdns.org&allowInsecure=1#4Mohsen-13134
-Host: 104.16.99.152, Port: 443, Status: OK
+Node: vless://ea21a60c-8ad2-4117-8000-dc7f8f6ac72d@185.143.235.201:2095?security=none&type=ws&path=/#4Mohsen-19146
+Host: 185.143.235.201, Port: 2095, Status: OK
 TCP log:
 TCP连接成功
 ========================================
-Node: vless://51905fd3-29de-4b4e-b351-83542f1d5390@45.139.11.243:443?security=tls&sni=Bia.alLhub.Ltd&type=ws&host=biA.ALlhub.LTD&path=%2F&fp=random&alpn=h2,http/1.1#Join+Telegram:@Farah_VPN
-Host: 45.139.11.243, Port: 443, Status: OK
+Node: vless://401374e6-df77-41fb-f638-dad8184f175b@5.10.245.70:443?security=tls&sni=pqh36v4.hiddendom.shop&type=grpc&host=pqh36v4.hiddendom.shop&alpn=h2#[]t.me/MoftConfig
+Host: 5.10.245.70, Port: 443, Status: OK
 TCP log:
 TCP连接成功
 ========================================
-Node: vless://d342d11e-d424-4583-b36e-524ab1f0afa4@104.26.3.165:443?security=tls&sni=a.xn--i-sx6a60i.us.kg&type=ws&host=a.xn--i-sx6a60i.us.kg&path=/?ed%3D2560#4Mohsen-17584
-Host: 104.26.3.165, Port: 443, Status: OK
+Node: vless://897a4bec-26b8-11e8-94be-00505695472c@104.18.25.151:443?sni=xv6.jpmj.dpdns.org&type=ws&host=xv6.jpmj.dpdns.org&allowInsecure=1#4Mohsen-13636
+Host: 104.18.25.151, Port: 443, Status: OK
 TCP log:
 TCP连接成功
 ========================================
-Node: vless://9d0a75d2-f747-4afa-b43f-d208af9e8f9a@159.54.160.222:443?security=reality&flow=xtls-rprx-vision&sni=itunes.apple.com&type=tcp&fp=chrome&pbk=AeJ40fWPYK3WSDtY_AGv3ewG_kwQvAoDtf3KIgk1DRU&sid=6ba85179e30d4fc2# VL-TCP-RLT  US-159.54.160.222:443
-Host: 159.54.160.222, Port: 443, Status: OK
-TCP log:
-TCP连接成功
-========================================
-Node: vless://98e3726e-36e0-41cc-9cea-0cee912af234@tnl39.vipradvin.ir:8220?encryption=none&security=none&type=tcp&headerType=http#VL-VIP-tnl39-1365
-Host: tnl39.vipradvin.ir, Port: 8220, Status: OK
-TCP log:
-TCP连接成功
-========================================
-Node: vless://2fcef64f-4986-452e-bd3c-ccae07ff6270@104.19.54.50:8080?type=ws&path=%2F@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy%3Fed%3D2048&host=www.speedtest.net.www.zula.ir.cloudflare.com.www.parsvds.ir.svgspeedtest.net.&security=none#[]t.me/ConfigsHub
-Host: 104.19.54.50, Port: 8080, Status: OK
-TCP log:
-TCP连接成功
-========================================
-Node: vless://4e4768df-0fbb-4cc1-8fd3-7c6fea95742a@162.159.49.46:443?encryption=none&security=tls&sni=rayan-08.parastoo.dpdns.org&fp=chrome&allowInsecure=1&type=ws&host=rayan-08.parastoo.dpdns.org&path=%2F%40Rayan_Config#%40Rayan_Config%20-%20MIX-2
-Host: 162.159.49.46, Port: 443, Status: OK
-TCP log:
-TCP连接成功
-========================================
-Node: vless://b035f65f-5674-4bf2-b306-8ca985c85e64@ns4.esfahansiman.com:443?path=TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config&security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&host=WWW.pegAh-Esfahan.De.&fp=chrome&type=ws&sni=WWW.pegAh-Esfahan.De.#@MoftConfigCosta RicaPozosping:8.82ms
-Host: ns4.esfahansiman.com, Port: 443, Status: OK
-TCP log:
-TCP连接成功
-========================================
-Node: vless://d8b42cd5-a149-4356-9e61-30ad83662600@35.179.133.141:443?security=none&encryption=none&headerType=none&type=tcp#[]t.me/MoftConfig
-Host: 35.179.133.141, Port: 443, Status: FAILED
+Node: vless://ab42b902-32fc-2f60-10c9-37704f6e88e3@btemp.cutemugs.ir:6076?security=none&encryption=none&host=getdcmess.iranlms.ir%2C%20web.rubika.ir%2C%20rubika.ir%2C%20m.rubika.ir&headerType=http&type=tcp#[]t.me/MoftConfig
+Host: btemp.cutemugs.ir, Port: 6076, Status: FAILED
 TCP log:
 TCP连接失败: timed out
 ========================================
-Node: vless://05519058-d2ac-4f28-9e4a-2b2a1386749e@52.29.231.161:22222?path=/telegram-channel-vlessconfig-ws&security=tls&encryption=none&host=telegram-channel-vlessconfig.sohala.uk&type=ws&sni=telegram-channel-vlessconfig.sohala.uk#[]t.me/MoftConfig
-Host: 52.29.231.161, Port: 22222, Status: FAILED
+Node: vless://53fa8faf-ba4b-4322-9c69-a3e5b1555049@45.159.216.206:8880?path=%2FChannel%20id%3A%20%40ShadowProxy66%3Fed%3D2560&security=none&encryption=none&host=reedfree8mahsang2.redorg.ir&type=ws#@MoftConfigGermanyFrankfurt am Mainping:8.17ms
+Host: 45.159.216.206, Port: 8880, Status: OK
+TCP log:
+TCP连接成功
+========================================
+Node: vless://53bea386-912e-4fe3-9eff-59c2285a176c@104.21.48.1:2053?security=tls&sni=9.neshaan.org&type=ws&host=9.neshaan.org&path=%2Fadmins%3Fed%3D2560&fp=chrome&alpn=http%2F1.1#4Mohsen-10454
+Host: 104.21.48.1, Port: 2053, Status: OK
+TCP log:
+TCP连接成功
+========================================
+Node: vless://72f43887-1fab-474c-8ed7-d278322030a7@151.101.130.219:443?security=tls&sni=speedtest.net&type=ws&host=snapp.com&path=/Join--HAJIMAMADVPN--Join--HAJIMAMADVPN--Join--HAJIMAMADVPN--Join--HAJIMAMADVPN--Join--HAJIMAMADVPN--Join--HAJIMAMADVPN--Join--HAJIMAMADVPN--Join--HAJIMAMADVPN--Join--HAJIMAMADVPN--Join--HAJIMAMADVPN--Join--HAJIMAMADVPN--Join--HAJIMAMADVPN--Join--HAJIMAMADVPN?ed%3D2048# VL-WS-TLS  US-151.101.130.219:443
+Host: 151.101.130.219, Port: 443, Status: OK
+TCP log:
+TCP连接成功
+========================================
+Node: vless://d60fc3c5-9f07-4cdb-b81f-70af27936bdc@185.135.9.247:8880?sni=ex.sue.x10.mx&type=ws&host=ex.sue.x10.mx&path=/Telegram&allowInsecure=0#4Mohsen-18353
+Host: 185.135.9.247, Port: 8880, Status: OK
+TCP log:
+TCP连接成功
+========================================
+Node: vless://bd82aa7b-6ec6-47b7-8587-745b20747f64@elipii3.digi-elipii.ir:80?security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&host=google.com%23Germany4-98274&headerType=http&fp=firefox&type=tcp&sni=digi-elipii.ir#[]t.me/ConfigsHub
+Host: elipii3.digi-elipii.ir, Port: 80, Status: OK
+TCP log:
+TCP连接成功
+========================================
+Node: vless://7f93e196-1b2f-4a42-8051-5815554c05db@35.174.9.231:443?allowInsecure=0&sni=zula.ir&flow=xtls-rprx-vision-udp443&fp=chrome&security=tls#%F0%9F%87%BA%F0%9F%87%B811%20%7C%20%201.4MB/s%7C30%25%7COpenai
+Host: 35.174.9.231, Port: 443, Status: FAILED
 TCP log:
 TCP连接失败: timed out
 ========================================
-Node: vless://694a7541-3855-4819-bf23-328e7b86e71e@fgdg.gpty999qed.ir:39439?mode=gun&security=reality&encryption=none&pbk=axLa2Yb5VegTFNy2v8chJvX6ShWl5v9jPgyGeFpTMwA&fp=chrome&spx=%2F&type=grpc&serviceName=TEL%20%3B%20%40v2ray-store&sni=yahoo.com&sid=1f#@MoftConfigGermanyFrankfurt am Main (Innenstadt I)ping:31.39ms
-Host: fgdg.gpty999qed.ir, Port: 39439, Status: FAILED
+Node: vless://05519058-d2ac-4f28-9e4a-2b2a1386749e@51.20.162.194:22222?path=/telegram-channel-vlessconfig-ws&security=tls&encryption=none&host=telegram-channel-vlessconfig.sohala.uk&type=ws&sni=telegram-channel-vlessconfig.sohala.uk#[]t.me/ConfigsHub
+Host: 51.20.162.194, Port: 22222, Status: FAILED
 TCP log:
 TCP连接失败: timed out
 ========================================
-Node: vless://2a219df1-a04b-4424-bfd2-cb37aeb10b2c@178.62.232.236:7594?mode=gun&security=reality&encryption=none&pbk=AZSptdvlWvvmKWEDTY56UsIcnTP8nGCafvPEQOozrxw&fp=chrome&spx=%2FJOIN_BEDE_CHANEL%40MARAMBASHI_MARAMBASHI&type=grpc&serviceName=7594vless&sni=dash.cloudflare.com&sid=765e8e700426816c#[]t.me/ConfigsHub
-Host: 178.62.232.236, Port: 7594, Status: FAILED
+Node: vless://05519058-d2ac-4f28-9e4a-2b2a1386749e@52.58.86.124:22222?path=/telegram-channel-vlessconfig-ws&security=tls&encryption=none&host=telegram-channel-vlessconfig.sohala.uk&type=ws&sni=telegram-channel-vlessconfig.sohala.uk#[]t.me/MoftConfig
+Host: 52.58.86.124, Port: 22222, Status: FAILED
+TCP log:
+TCP连接失败: timed out
+========================================
+Node: vless://2c0050c0-9b32-48ee-b46c-16f2844bad6d@164.90.180.228:443?flow=xtls-rprx-vision&type=tcp&security=reality&fp=chrome&sni=gr1.tak30zanjan.ir&pbk=9kw-s--kXR8_jKj5J0l2HD502FDzxYN9XefdketMlF8&sid=8e5f1d0b&spx=/@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn#[]t.me/MoftConfig
+Host: 164.90.180.228, Port: 443, Status: FAILED
 TCP log:
 TCP连接失败: timed out
 ========================================
